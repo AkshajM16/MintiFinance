@@ -1,6 +1,6 @@
 # Minti
 
-**1st Place Fan Favorite — HackIllinois 2025**
+**1st Place Fan Favorite — HackIllinois 2025** by Akshaj Mehta, Adya Daruka, Anvesha Saraf, and Shlok Thakkar
 
 AI-powered personal finance planner that predicts future spending from calendar context and historical behavior.
 
