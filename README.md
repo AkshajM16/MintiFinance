@@ -5,6 +5,11 @@
 AI-powered personal finance planner that predicts future spending from calendar context and historical behavior.
 
 ---
+## Demo Video
+
+[![Demo Video](https://img.youtube.com/vi/Nttw3gkAuBQ/0.jpg)]
+
+---
 
 ## What it does
 
