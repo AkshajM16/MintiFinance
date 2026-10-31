@@ -1,0 +1,63 @@
+{
+  "run_id": "20261030T235452-0dabb70e",
+  "environment": {
+    "kind": "local-postgresql-emulated-sqs",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.12.12",
+    "django": "5.2.18",
+    "seed": 2025,
+    "workers": "correctness: 1 and 4 threads; latency: 1 background consumer thread",
+    "queue": "Moto SQS standard, no AWS network; latency visibility 60s; 1ms idle poll",
+    "latency_definition": "perf_counter before transaction INSERT to coordinator observing committed alert rows, includes queue API and 1ms observation polling; same host clock",
+    "postgresql": "PostgreSQL 17.11 (Homebrew) on aarch64-apple-darwin25.6.0, compiled by Apple clang version 21.0.0 (clang-2100.3.34.2), 64-bit"
+  },
+  "correctness": [
+    {
+      "mode": "sequential",
+      "deliveries": 150,
+      "logical_events": 100,
+      "expected_alerts": 125,
+      "actual_unique_alerts": 125,
+      "duplicate_alerts": 0,
+      "missing_alerts": 0,
+      "processing_failures": 0,
+      "constraint_rejected_duplicate": true
+    },
+    {
+      "mode": "concurrent",
+      "deliveries": 150,
+      "logical_events": 100,
+      "expected_alerts": 125,
+      "actual_unique_alerts": 125,
+      "duplicate_alerts": 0,
+      "missing_alerts": 0,
+      "processing_failures": 0,
+      "constraint_rejected_duplicate": true
+    }
+  ],
+  "latency_trials": [
+    {
+      "trial": 1,
+      "observations": 50,
+      "p50_ms": 14.637292013503611,
+      "p95_ms": 28.93074997700751,
+      "max_ms": 55.34920794889331
+    },
+    {
+      "trial": 2,
+      "observations": 50,
+      "p50_ms": 12.90791598148644,
+      "p95_ms": 15.49416600028053,
+      "max_ms": 17.39912503398955
+    },
+    {
+      "trial": 3,
+      "observations": 50,
+      "p50_ms": 14.338124950882047,
+      "p95_ms": 30.84291599225253,
+      "max_ms": 67.0764580136165
+    }
+  ],
+  "latency_processing_failures": 0
+}

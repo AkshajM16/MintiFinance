@@ -4,6 +4,18 @@
 
 AI-powered personal finance planner that predicts future spending from calendar context and historical behavior.
 
+## Minti v2 — verified local upgrade
+
+The cloud upgrade adds asynchronous budget notifications, PostgreSQL idempotency, SQS retries/DLQ support, security fixes, tests, Docker packaging and AWS CDK infrastructure. **AWS is not deployed**; cloud credentials/authorization are pending. The baseline tag preserves the current pre-upgrade repository, not a claim about the exact 2025 submission.
+
+- [Implementation plan](docs/V2_PLAN.md) · [Progress/resume point](docs/V2_PROGRESS.md)
+- [Architecture and limitations](docs/V2_ARCHITECTURE.md)
+- [Measured benchmarks](docs/V2_BENCHMARKS.md) · [Raw results](results/benchmark_summary.json)
+- [Setup, deployment, recovery and teardown](docs/V2_OPERATIONS.md)
+- [Evidence-backed draft resume bullets](docs/V2_RESUME_EVIDENCE.md)
+
+Quick verification: follow V2_OPERATIONS.md to create an isolated PostgreSQL database, then run pytest, `npm ci && npm run build`, and `scripts/run_e2e.py`. No live OAuth or paid model calls are needed for tests. Production Compose requires `.env` with generated secrets; web is loopback-only, and the worker requires SQS configuration. See the operations guide for the authoritative v2 setup; the original walkthrough below provides historical context.
+
 ---
 ## Demo Video
 
@@ -147,5 +159,5 @@ Open `http://localhost:8000`.
 
 - Bank aggregation via Plaid or Capital One sandbox
 - Forecast explainability ("why this prediction")
-- Proactive overspending alerts and push notifications
+- Push notifications beyond the implemented in-app budget alerts
 - Gamification layer for savings goal streaks

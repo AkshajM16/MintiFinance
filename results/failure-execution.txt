@@ -1,0 +1,46 @@
+{
+  "run_id": "failure-58de7c794100413581474ae7d69eb263",
+  "environment": "local PostgreSQL + Moto SQS (not AWS)",
+  "visibility_seconds": 0,
+  "max_receive_count": 3,
+  "poison_attempts": 3,
+  "dlq_messages": 1,
+  "transient_attempts": 2,
+  "healthy_attempts": 1,
+  "healthy_processing_continued": true,
+  "expected_alerts": 4,
+  "actual_alerts": 4,
+  "duplicate_alerts_after_replay": 0,
+  "attempts": [
+    {
+      "event_id": "5d6a764b-5e94-4154-aac9-32083cec746e",
+      "attempt": "1",
+      "success": false
+    },
+    {
+      "event_id": "5d6a764b-5e94-4154-aac9-32083cec746e",
+      "attempt": "2",
+      "success": false
+    },
+    {
+      "event_id": "5d6a764b-5e94-4154-aac9-32083cec746e",
+      "attempt": "3",
+      "success": false
+    },
+    {
+      "event_id": "029bc6bc-ea28-42c1-a4d5-37b4452fc868",
+      "attempt": "1",
+      "success": false
+    },
+    {
+      "event_id": "029bc6bc-ea28-42c1-a4d5-37b4452fc868",
+      "attempt": "2",
+      "success": true
+    },
+    {
+      "event_id": "0322131b-b6c0-4b5c-ba55-d063b8eb7989",
+      "attempt": "1",
+      "success": true
+    }
+  ]
+}
