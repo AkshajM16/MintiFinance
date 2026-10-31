@@ -38,3 +38,9 @@
 - Commits: a0b06aa plan; d0afb81 feature/security/migrations; e772544 tests/benchmark harness/container/CDK/CI.
 - Draft PR and GitHub CI status to be recorded after push. Cloud acceptance remains explicitly blocked by credentials and cost approval; optional AI alert explanation and automatic existing-instance app rollout omitted within scope.
 - No human peer review; implementation reviewed by the coding agent and verified through executed automated tests. No further user input required for completed local work.
+
+## PR and final bootstrap review
+
+- Draft PR opened: https://github.com/AkshajM16/MintiFinance/pull/1. GitHub connector returned 403 for PR creation; authenticated gh CLI succeeded. No human review requested or claimed.
+- Found Compose release checksums use a binary-marker `*` prefix; corrected bootstrap checksum selection and verified against the real pinned release checksum record. Infrastructure build/assertions/synth/schema lint rerun passed.
+- Production Compose app/database stopped after successful smoke testing; volumes and local synthetic PostgreSQL data retained. No cloud resources to clean up.

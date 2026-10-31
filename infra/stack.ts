@@ -40,7 +40,7 @@ export class MintiStack extends cdk.Stack {
       'cd /tmp',
       'curl -fsSLO https://github.com/docker/compose/releases/download/v2.39.4/docker-compose-linux-x86_64',
       'curl -fsSL https://github.com/docker/compose/releases/download/v2.39.4/checksums.txt -o compose-checksums.txt',
-      "grep ' docker-compose-linux-x86_64$' compose-checksums.txt | sha256sum -c -",
+      "grep '[ *]docker-compose-linux-x86_64$' compose-checksums.txt | sha256sum -c -",
       'install -m 755 docker-compose-linux-x86_64 /usr/local/lib/docker/cli-plugins/docker-compose',
       `aws s3 cp s3://${source.s3BucketName}/${source.s3ObjectKey} /tmp/minti.zip --region ${this.region}`,
       'unzip -o /tmp/minti.zip -d /opt/minti', 'cd /opt/minti',
