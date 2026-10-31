@@ -1,45 +1,49 @@
-version: "3.8"
+x-app: &app
+  build:
+    context: .
+    args:
+      VITE_GOOGLE_CLIENT_ID: ${VITE_GOOGLE_CLIENT_ID:-}
+  image: minti-v2:local
+  env_file: .env
+  environment:
+    POSTGRES_HOST: db
+    POSTGRES_PORT: "5432"
+    DEBUG: "False"
+  restart: unless-stopped
+  security_opt: ["no-new-privileges:true"]
+  depends_on:
+    db:
+      condition: service_healthy
 
 services:
   db:
-    image: postgres:15-alpine
+    image: postgres:17-alpine
     environment:
-      POSTGRES_USER: minty
-      POSTGRES_PASSWORD: minty_password
-      POSTGRES_DB: minti_db
-    ports:
-      - "5432:5432"
+      POSTGRES_USER: ${POSTGRES_USER:-minti}
+      POSTGRES_DB: ${POSTGRES_DB:-minti}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U minty -d minti_db"]
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
       interval: 5s
       timeout: 5s
-      retries: 5
+      retries: 20
     restart: unless-stopped
-
   app:
-    build: .
-    ports:
-      - "8000:8000"
-    environment:
-      POSTGRES_DB: minti_db
-      POSTGRES_USER: minty
-      POSTGRES_PASSWORD: minty_password
-      POSTGRES_HOST: db
-      POSTGRES_PORT: "5432"
-      DJANGO_SECRET_KEY: "${DJANGO_SECRET_KEY:-django-insecure-replace-in-production}"
-      DEBUG: "${DEBUG:-False}"
-      ALLOWED_HOSTS: "${ALLOWED_HOSTS:-localhost 127.0.0.1}"
-      OPENAI_API_KEY: "${OPENAI_API_KEY:-}"
-      VITE_GOOGLE_CLIENT_ID: "${VITE_GOOGLE_CLIENT_ID:-}"
+    <<: *app
+    ports: ["127.0.0.1:8000:8000"]
+    command: ["sh", "-c", "python manage.py migrate --noinput && exec gunicorn minti.wsgi:application --bind 0.0.0.0:8000 --workers 2 --timeout 60 --access-logfile /dev/null"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+  worker:
+    <<: *app
+    command: ["python", "manage.py", "consume_alerts"]
     depends_on:
-      db:
+      app:
         condition: service_healthy
-    restart: unless-stopped
-    command: >
-      sh -c "python manage.py migrate &&
-             gunicorn minti.wsgi:application --bind 0.0.0.0:8000 --workers 4 --timeout 120"
-
 volumes:
   postgres_data:

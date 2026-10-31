@@ -1,31 +1,40 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export default function GoogleCallback() {
+  const started = useRef(false);
   useEffect(() => {
+    if (started.current) return;
+    started.current = true;
     const hash = window.location.hash.substring(1);
     const params = new URLSearchParams(hash);
     const accessToken = params.get("access_token");
     const idToken = params.get("id_token");
 
-    if (!accessToken || !idToken) {
+    const state = params.get("state");
+    const expectedState = sessionStorage.getItem("minti_oauth_state");
+    sessionStorage.removeItem("minti_oauth_state");
+    window.history.replaceState(null, "", "/google-callback");
+
+    if (!accessToken || !idToken || !state || state !== expectedState) {
       window.location.replace("/");
       return;
     }
 
     // Keep Google access token for Calendar API calls (client-side)
-    localStorage.setItem("google_access_token", accessToken);
+
 
     // Exchange the Google id_token for a DRF auth token
     fetch("/api/auth/google/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ id_token: idToken }),
+      body: JSON.stringify({ id_token: idToken, state }),
     })
       .then((res) => {
         if (!res.ok) throw new Error("Auth failed");
         return res.json();
       })
       .then((data) => {
+        localStorage.setItem("google_access_token", accessToken);
         localStorage.setItem("minti_auth_token", data.token);
         localStorage.setItem("minti_user", JSON.stringify(data.user));
       })

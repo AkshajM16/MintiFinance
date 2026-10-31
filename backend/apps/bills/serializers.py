@@ -1,9 +1,11 @@
+from minti.validation import MoneyField
 from rest_framework import serializers
 
 from .models import BillReminder
 
 
 class BillReminderSerializer(serializers.ModelSerializer):
+    amount = MoneyField()
     dueDate = serializers.DateTimeField(source="due_date")
     isPaid = serializers.BooleanField(source="is_paid", required=False)
     reminderDays = serializers.IntegerField(source="reminder_days", required=False)

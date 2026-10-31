@@ -40,7 +40,7 @@ export function ChatBot({ userId }: ChatBotProps) {
         method: "POST",
         headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({
-          messages: [...messages, nextUserMessage].map((m) => ({
+          messages: [...messages, nextUserMessage].filter((m) => m.content.trim()).slice(-20).map((m) => ({
             role: m.role,
             content: m.content,
           })),

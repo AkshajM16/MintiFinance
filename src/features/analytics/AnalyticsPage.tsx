@@ -8,10 +8,11 @@ interface AnalyticsPageProps {
   transactions: Transaction[];
 }
 
+const colors = ["#3B82F6", "#8B5CF6", "#F59E0B", "#EF4444", "#10B981", "#06B6D4"];
+
 export function AnalyticsPage({ transactions }: AnalyticsPageProps) {
   const [selectedPeriod, setSelectedPeriod] = useState<"month" | "quarter" | "year">("month");
 
-  const colors = ["#3B82F6", "#8B5CF6", "#F59E0B", "#EF4444", "#10B981", "#06B6D4"];
 
   const filteredTransactions = useMemo(() => {
     const now = new Date();

@@ -94,3 +94,8 @@ coverage/
 *.rar
 *.7z
 
+work/
+infra/cdk.out/
+playwright-report/
+test-results/
+deployment-outputs.json

@@ -1,3 +1,5 @@
+from django.db import transaction, IntegrityError
+from rest_framework import serializers
 from datetime import datetime, timedelta, timezone
 
 from rest_framework import status
@@ -33,44 +35,22 @@ class CalendarEventView(APIView):
         return Response(CalendarEventSerializer(events, many=True).data)
 
     def post(self, request):
-        events = request.data.get("events", [])
-        if not isinstance(events, list):
-            return Response(
-                {"error": "events must be an array"},
-                status=status.HTTP_400_BAD_REQUEST,
-            )
-
-        # Deduplicate incoming events by id
-        seen_ids: set = set()
-        unique_events = []
-        for ev in events:
-            if ev.get("id") and ev["id"] not in seen_ids:
-                seen_ids.add(ev["id"])
-                unique_events.append(ev)
-
-        # Full resync: delete then recreate to avoid stale data
-        CalendarEvent.objects.filter(user=request.user).delete()
-
-        saved = 0
-        for ev in unique_events:
-            try:
-                CalendarEvent.objects.create(
-                    id=ev["id"],
-                    user=request.user,
-                    title=ev.get("title", "Untitled"),
-                    description=ev.get("description", ""),
-                    start=ev["start"],
-                    end=ev["end"],
-                    category=ev.get("category"),
-                    raw=ev.get("raw", {}),
-                    spending_probability=ev.get("spendingProbability"),
-                    expected_spending_range=ev.get("expectedSpendingRange"),
-                    spending_categories=ev.get("spendingCategories"),
-                    confidence=ev.get("confidence"),
-                    keywords=ev.get("keywords"),
-                )
-                saved += 1
-            except Exception:
-                continue
-
-        return Response({"success": True, "savedCount": saved, "totalCount": len(unique_events)})
+        events = request.data.get("events")
+        if not isinstance(events, list) or len(events) > 1000:
+            return Response({"error": "events must be an array of at most 1000 records"}, status=400)
+        serializer = CalendarEventSerializer(data=events, many=True)
+        serializer.is_valid(raise_exception=True)
+        unique = {event["id"]: event for event in serializer.validated_data}
+        for event in unique.values():
+            if event["end"] < event["start"]:
+                raise serializers.ValidationError("Event end must follow start")
+        try:
+            with transaction.atomic():
+                if CalendarEvent.objects.filter(id__in=unique).exclude(user=request.user).exists():
+                    return Response({"error": "Event identity conflict"}, status=409)
+                for event_id, data in unique.items():
+                    CalendarEvent.objects.update_or_create(id=event_id, user=request.user, defaults=data)
+                CalendarEvent.objects.filter(user=request.user).exclude(id__in=unique).delete()
+        except IntegrityError:
+            return Response({"error": "Event identity conflict"}, status=409)
+        return Response({"success": True, "savedCount": len(unique), "totalCount": len(events)})

@@ -1,0 +1,188 @@
+.................FF..........................                            [100%]
+=================================== FAILURES ===================================
+__________________ test_queue_retries_dlq_and_healthy_message __________________
+
+budget = <Budget: Monthly synthetic ($100)>
+expense = <function expense.<locals>.create at 0x113bf8360>
+
+    @mock_aws
+    def test_queue_retries_dlq_and_healthy_message(budget, expense):
+        sqs = boto3.client('sqs', region_name='us-east-1')
+        dlq = sqs.create_queue(QueueName='test-dlq')['QueueUrl']
+        arn = sqs.get_queue_attributes(QueueUrl=dlq, AttributeNames=['QueueArn'])['Attributes']['QueueArn']
+        queue = sqs.create_queue(QueueName='test-main', Attributes={'VisibilityTimeout': '0',
+            'RedrivePolicy': json.dumps({'deadLetterTargetArn': arn, 'maxReceiveCount': '3'})})['QueueUrl']
+        sqs.send_message(QueueUrl=queue, MessageBody='malformed')
+        sqs.send_message(QueueUrl=queue, MessageBody=json.dumps(event_for(expense(100))))
+        failures = successes = 0
+        for _ in range(10):
+            for msg in sqs.receive_message(QueueUrl=queue, MaxNumberOfMessages=1, MessageSystemAttributeNames=['ApproximateReceiveCount']).get('Messages', []):
+                ok = handle_message(sqs, queue, msg)
+                successes += ok; failures += not ok
+>       assert (failures, successes) == (3, 1)
+E       assert (6, 0) == (3, 1)
+E         
+E         At index 0 diff: 6 != 3
+E         Use -v to get more diff
+
+backend/tests/test_alerts.py:131: AssertionError
+----------------------------- Captured stderr call -----------------------------
+{"timestamp": "2026-10-30T23:51:26.148756+00:00", "level": "ERROR", "logger": "minti.alerts", "outcome": "event_processing_failed", "event_id": null, "message_id": "b0e2a068-1d4e-4655-a516-904132c91cee", "attempt": "1", "error_type": "JSONDecodeError"}
+{"timestamp": "2026-10-30T23:51:26.149627+00:00", "level": "ERROR", "logger": "minti.alerts", "outcome": "event_processing_failed", "event_id": null, "message_id": "b0e2a068-1d4e-4655-a516-904132c91cee", "attempt": "2", "error_type": "JSONDecodeError"}
+{"timestamp": "2026-10-30T23:51:26.150783+00:00", "level": "ERROR", "logger": "minti.alerts", "outcome": "event_processing_failed", "event_id": null, "message_id": "b0e2a068-1d4e-4655-a516-904132c91cee", "attempt": "3", "error_type": "JSONDecodeError"}
+{"timestamp": "2026-10-30T23:51:26.152747+00:00", "level": "ERROR", "logger": "minti.alerts", "outcome": "event_processing_failed", "event_id": "13886a64-ff3c-4dfd-8a6d-e24957ba890a", "message_id": "93957ce5-8b6b-4de2-a71d-53a7b4869700", "attempt": "1", "error_type": "InterfaceError"}
+{"timestamp": "2026-10-30T23:51:26.153825+00:00", "level": "ERROR", "logger": "minti.alerts", "outcome": "event_processing_failed", "event_id": "13886a64-ff3c-4dfd-8a6d-e24957ba890a", "message_id": "93957ce5-8b6b-4de2-a71d-53a7b4869700", "attempt": "2", "error_type": "InterfaceError"}
+{"timestamp": "2026-10-30T23:51:26.154716+00:00", "level": "ERROR", "logger": "minti.alerts", "outcome": "event_processing_failed", "event_id": "13886a64-ff3c-4dfd-8a6d-e24957ba890a", "message_id": "93957ce5-8b6b-4de2-a71d-53a7b4869700", "attempt": "3", "error_type": "InterfaceError"}
+------------------------------ Captured log call -------------------------------
+ERROR    minti.alerts:queue.py:44 event_processing_failed
+ERROR    minti.alerts:queue.py:44 event_processing_failed
+ERROR    minti.alerts:queue.py:44 event_processing_failed
+ERROR    minti.alerts:queue.py:44 event_processing_failed
+ERROR    minti.alerts:queue.py:44 event_processing_failed
+ERROR    minti.alerts:queue.py:44 event_processing_failed
+_____________________________ test_transient_retry _____________________________
+
+self = <DatabaseWrapper vendor='postgresql' alias='default'>, name = None
+
+    def _cursor(self, name=None):
+        self.close_if_health_check_failed()
+        self.ensure_connection()
+        with self.wrap_database_errors:
+>           return self._prepare_cursor(self.create_cursor(name))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.12/site-packages/django/db/backends/base/base.py:298: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.12/site-packages/django/utils/asyncio.py:26: in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <DatabaseWrapper vendor='postgresql' alias='default'>, name = None
+
+    @async_unsafe
+    def create_cursor(self, name=None):
+        if name:
+            if is_psycopg3 and (
+                self.settings_dict["OPTIONS"].get("server_side_binding") is not True
+            ):
+                # psycopg >= 3 forces the usage of server-side bindings for
+                # named cursors so a specialized class that implements
+                # server-side cursors while performing client-side bindings
+                # must be used if `server_side_binding` is disabled (default).
+                cursor = ServerSideCursor(
+                    self.connection,
+                    name=name,
+                    scrollable=False,
+                    withhold=self.connection.autocommit,
+                )
+            else:
+                # In autocommit mode, the cursor will be used outside of a
+                # transaction, hence use a holdable cursor.
+                cursor = self.connection.cursor(
+                    name, scrollable=False, withhold=self.connection.autocommit
+                )
+        else:
+>           cursor = self.connection.cursor()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+E           psycopg2.InterfaceError: connection already closed
+
+.venv/lib/python3.12/site-packages/django/db/backends/postgresql/base.py:429: InterfaceError
+
+The above exception was the direct cause of the following exception:
+
+budget = <Budget: Monthly synthetic ($100)>
+expense = <function expense.<locals>.create at 0x113c35a80>
+
+    @mock_aws
+    def test_transient_retry(budget, expense):
+        sqs = boto3.client('sqs', region_name='us-east-1')
+        queue = sqs.create_queue(QueueName='retry', Attributes={'VisibilityTimeout': '0'})['QueueUrl']
+        sqs.send_message(QueueUrl=queue, MessageBody=json.dumps(event_for(expense())))
+        msg = sqs.receive_message(QueueUrl=queue)['Messages'][0]
+        def fail(_): raise RuntimeError('injected')
+        assert not handle_message(sqs, queue, msg, processor=fail)
+>       assert BudgetAlert.objects.count() == 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_alerts.py:144: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.12/site-packages/django/db/models/manager.py:87: in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/django/db/models/query.py:606: in count
+    return self.query.get_count(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/django/db/models/sql/query.py:646: in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/django/db/models/sql/query.py:628: in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py:1621: in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/django/utils/asyncio.py:26: in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/django/db/backends/base/base.py:320: in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/django/db/backends/base/base.py:297: in _cursor
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/django/db/utils.py:91: in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+.venv/lib/python3.12/site-packages/django/db/backends/base/base.py:298: in _cursor
+    return self._prepare_cursor(self.create_cursor(name))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/django/utils/asyncio.py:26: in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <DatabaseWrapper vendor='postgresql' alias='default'>, name = None
+
+    @async_unsafe
+    def create_cursor(self, name=None):
+        if name:
+            if is_psycopg3 and (
+                self.settings_dict["OPTIONS"].get("server_side_binding") is not True
+            ):
+                # psycopg >= 3 forces the usage of server-side bindings for
+                # named cursors so a specialized class that implements
+                # server-side cursors while performing client-side bindings
+                # must be used if `server_side_binding` is disabled (default).
+                cursor = ServerSideCursor(
+                    self.connection,
+                    name=name,
+                    scrollable=False,
+                    withhold=self.connection.autocommit,
+                )
+            else:
+                # In autocommit mode, the cursor will be used outside of a
+                # transaction, hence use a holdable cursor.
+                cursor = self.connection.cursor(
+                    name, scrollable=False, withhold=self.connection.autocommit
+                )
+        else:
+>           cursor = self.connection.cursor()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+E           django.db.utils.InterfaceError: connection already closed
+
+.venv/lib/python3.12/site-packages/django/db/backends/postgresql/base.py:429: InterfaceError
+----------------------------- Captured stderr call -----------------------------
+{"timestamp": "2026-10-30T23:51:26.320321+00:00", "level": "ERROR", "logger": "minti.alerts", "outcome": "event_processing_failed", "event_id": "ffd3c4db-a5de-4174-8e75-d87083c1b883", "message_id": "302ff075-84fb-4da8-8ff2-62b48cdc1b9d", "attempt": null, "error_type": "RuntimeError"}
+------------------------------ Captured log call -------------------------------
+ERROR    minti.alerts:queue.py:44 event_processing_failed
+=============================== warnings summary ===============================
+backend/tests/test_alerts.py: 2 warnings
+backend/tests/test_api_security.py: 25 warnings
+  /Users/akshaj/Desktop/Internship/Projects/Minti V2/.venv/lib/python3.12/site-packages/django/core/handlers/base.py:61: UserWarning: No directory at: /Users/akshaj/Desktop/Internship/Projects/Minti V2/backend/staticfiles/
+    mw_instance = middleware(adapted_handler)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED backend/tests/test_alerts.py::test_queue_retries_dlq_and_healthy_message
+FAILED backend/tests/test_alerts.py::test_transient_retry - django.db.utils.I...
+2 failed, 43 passed, 27 warnings in 1.69s

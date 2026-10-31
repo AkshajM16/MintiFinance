@@ -1,3 +1,4 @@
+import { getAuthHeaders } from "@/services/api";
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
@@ -51,7 +52,7 @@ export function BudgetPage({ user, transactions, events }: BudgetPageProps) {
     const fetchBudgets = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`/api/budgets?userId=${user.id}`);
+        const response = await fetch("/api/budgets", { headers: getAuthHeaders() });
         if (response.ok) {
           const data = await response.json();
           setBudgets(data);
@@ -105,7 +106,7 @@ export function BudgetPage({ user, transactions, events }: BudgetPageProps) {
     event.preventDefault();
     const response = await fetch("/api/budgets", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...getAuthHeaders() },
       body: JSON.stringify({
         userId: user.id,
         name: form.name,

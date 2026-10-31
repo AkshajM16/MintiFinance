@@ -1,24 +1,7 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
-  { ignores: ["dist/**", "backend/**", "node_modules/**"] },
-  ...compat.extends("eslint:recommended"),
-  {
-    files: ["**/*.{ts,tsx}"],
-    rules: {
-      "no-unused-vars": "warn",
-      "no-undef": "off",
-    },
-  },
+import hooks from 'eslint-plugin-react-hooks';
+import tseslint from 'typescript-eslint';
+export default [
+  { ignores: ['dist/**', 'backend/**', 'node_modules/**', 'infra/**', 'work/**'] },
+  { files: ['src/**/*.{ts,tsx}'], languageOptions: { parser: tseslint.parser }, plugins: { 'react-hooks': hooks },
+    rules: { 'react-hooks/exhaustive-deps': 'error', 'no-debugger': 'error', 'no-constant-condition': 'error' } },
 ];
-
-export default eslintConfig;

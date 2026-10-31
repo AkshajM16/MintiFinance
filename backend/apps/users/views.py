@@ -1,4 +1,6 @@
-import os
+import secrets
+import time
+from django.utils.crypto import constant_time_compare
 
 from django.conf import settings
 from google.auth.transport import requests as google_requests
@@ -13,14 +15,27 @@ from .models import User
 from .serializers import UserSerializer
 
 
+class GoogleStartView(APIView):
+    permission_classes = [AllowAny]
+    def get(self, request):
+        state, nonce = secrets.token_urlsafe(32), secrets.token_urlsafe(32)
+        request.session["oauth"] = {"state": state, "nonce": nonce, "created": time.time()}
+        return Response({"state": state, "nonce": nonce})
+
+
 class GoogleAuthView(APIView):
     """Exchange a Google id_token for a DRF auth token."""
 
     permission_classes = [AllowAny]
 
     def post(self, request):
+        pending = request.session.pop("oauth", None)
+        state = request.data.get("state")
+        if (not pending or not isinstance(state, str) or time.time() - pending["created"] > 600
+                or not constant_time_compare(state, pending["state"])):
+            return Response({"error": "Login expired or invalid"}, status=401)
         token = request.data.get("id_token")
-        if not token:
+        if not isinstance(token, str) or not token or len(token) > 16384:
             return Response(
                 {"error": "id_token is required"}, status=status.HTTP_400_BAD_REQUEST
             )
@@ -38,12 +53,15 @@ class GoogleAuthView(APIView):
                 google_requests.Request(),
                 client_id,
             )
-        except ValueError as exc:
+        except Exception:
             return Response(
-                {"error": f"Invalid token: {exc}"},
+                {"error": "Invalid Google credential"},
                 status=status.HTTP_401_UNAUTHORIZED,
             )
 
+        if (id_info.get("nonce") != pending["nonce"] or id_info.get("email_verified") is not True
+                or not id_info.get("sub")):
+            return Response({"error": "Invalid Google credential"}, status=401)
         google_sub = id_info.get("sub")
         email = id_info.get("email")
         name = id_info.get("name")
@@ -55,6 +73,9 @@ class GoogleAuthView(APIView):
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
+        existing = User.objects.filter(email=email).first()
+        if existing and existing.google_id and existing.google_id != google_sub:
+            return Response({"error": "Account identity mismatch"}, status=401)
         user, _ = User.objects.update_or_create(
             email=email,
             defaults={

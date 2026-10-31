@@ -1,0 +1,30 @@
+{
+  "measured_date_local": "2026-10-30",
+  "timezone": "America/Chicago",
+  "backend_tests_passed": 54,
+  "backend_tests_failed": 0,
+  "playwright_tests_passed": 1,
+  "infrastructure_assertions_passed": 9,
+  "typecheck": "passed (npm run build)",
+  "frontend_build": "passed",
+  "frontend_lint": "passed",
+  "python_critical_lint": "passed",
+  "npm_known_vulnerabilities": 0,
+  "python_runtime_known_vulnerabilities": 0,
+  "cdk_synth": "passed",
+  "cloudformation_schema_lint": "passed",
+  "docker_build": "passed",
+  "docker_loopback_smoke": "passed",
+  "github_ci": {
+    "result": "success",
+    "run_id": 41148044609,
+    "tested_commit": "981b9f84a56fb6402a9ece2bea3a1b8d84e19bf1",
+    "url": "https://github.com/AkshajM16/MintiFinance/actions/runs/41148044609",
+    "note": "Exact recorded hosted run; later documentation/bootstrap revisions also receive CI checks on the PR."
+  },
+  "aws_provisioning": "blocked: no credentials/region or billable-resource authorization",
+  "aws_endpoint_smoke": "not run",
+  "cloudwatch_delivery_and_alarm": "not run",
+  "live_google_oauth": "not run",
+  "paid_llm_calls": 0
+}

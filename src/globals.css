@@ -267,7 +267,7 @@ button:hover, .btn:hover {
 
 /* Inputs */
 input, select, textarea {
-  background: var(--color-white);
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;

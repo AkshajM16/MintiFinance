@@ -1,0 +1,405 @@
+
+> minti-infra@2.0.0 synth
+> cdk synth
+
+AI agent detected
+Resources:
+  Vpc8378EB38:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsHostnames: true
+      EnableDnsSupport: true
+      InstanceTenancy: default
+      Tags:
+        - Key: Name
+          Value: MintiV2/Vpc
+        - Key: Project
+          Value: Minti-v2
+    Metadata:
+      aws:cdk:path: MintiV2/Vpc/Resource
+  VpcoutboundSubnet1SubnetAA1ECF24:
+    Type: AWS::EC2::Subnet
+    Properties:
+      AvailabilityZone:
+        Fn::Select:
+          - 0
+          - Fn::GetAZs: ""
+      CidrBlock: 10.0.0.0/24
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: aws-cdk:subnet-name
+          Value: outbound
+        - Key: aws-cdk:subnet-type
+          Value: Public
+        - Key: Name
+          Value: MintiV2/Vpc/outboundSubnet1
+        - Key: Project
+          Value: Minti-v2
+      VpcId:
+        Ref: Vpc8378EB38
+    Metadata:
+      aws:cdk:path: MintiV2/Vpc/outboundSubnet1/Subnet
+  VpcoutboundSubnet1RouteTable5C2ED8F0:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      Tags:
+        - Key: Name
+          Value: MintiV2/Vpc/outboundSubnet1
+        - Key: Project
+          Value: Minti-v2
+      VpcId:
+        Ref: Vpc8378EB38
+    Metadata:
+      aws:cdk:path: MintiV2/Vpc/outboundSubnet1/RouteTable
+  VpcoutboundSubnet1RouteTableAssociation4A9452BB:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId:
+        Ref: VpcoutboundSubnet1RouteTable5C2ED8F0
+      SubnetId:
+        Ref: VpcoutboundSubnet1SubnetAA1ECF24
+    Metadata:
+      aws:cdk:path: MintiV2/Vpc/outboundSubnet1/RouteTableAssociation
+  VpcoutboundSubnet1DefaultRouteB668242E:
+    Type: AWS::EC2::Route
+    Properties:
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId:
+        Ref: VpcIGWD7BA715C
+      RouteTableId:
+        Ref: VpcoutboundSubnet1RouteTable5C2ED8F0
+    DependsOn:
+      - VpcVPCGWBF912B6E
+    Metadata:
+      aws:cdk:path: MintiV2/Vpc/outboundSubnet1/DefaultRoute
+  VpcIGWD7BA715C:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: MintiV2/Vpc
+        - Key: Project
+          Value: Minti-v2
+    Metadata:
+      aws:cdk:path: MintiV2/Vpc/IGW
+  VpcVPCGWBF912B6E:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      InternetGatewayId:
+        Ref: VpcIGWD7BA715C
+      VpcId:
+        Ref: Vpc8378EB38
+    Metadata:
+      aws:cdk:path: MintiV2/Vpc/VPCGW
+  PrivateAccess24FE8EB6:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: No inbound access. Use SSM port forwarding.
+      SecurityGroupEgress:
+        - CidrIp: 0.0.0.0/0
+          Description: Allow all outbound traffic by default
+          IpProtocol: "-1"
+      Tags:
+        - Key: Project
+          Value: Minti-v2
+      VpcId:
+        Ref: Vpc8378EB38
+    Metadata:
+      aws:cdk:path: MintiV2/PrivateAccess/Resource
+  DeadLettersBBF8BAAB:
+    Type: AWS::SQS::Queue
+    Properties:
+      MessageRetentionPeriod: 1209600
+      SqsManagedSseEnabled: true
+      Tags:
+        - Key: Project
+          Value: Minti-v2
+    UpdateReplacePolicy: Delete
+    DeletionPolicy: Delete
+    Metadata:
+      aws:cdk:path: MintiV2/DeadLetters/Resource
+  DeadLettersPolicy05322138:
+    Type: AWS::SQS::QueuePolicy
+    Properties:
+      PolicyDocument:
+        Statement:
+          - Action: sqs:*
+            Condition:
+              Bool:
+                aws:SecureTransport: "false"
+            Effect: Deny
+            Principal:
+              AWS: "*"
+            Resource:
+              Fn::GetAtt:
+                - DeadLettersBBF8BAAB
+                - Arn
+        Version: "2012-10-17"
+      Queues:
+        - Ref: DeadLettersBBF8BAAB
+    Metadata:
+      aws:cdk:path: MintiV2/DeadLetters/Policy/Resource
+  BudgetEventsD4AB1FEA:
+    Type: AWS::SQS::Queue
+    Properties:
+      MessageRetentionPeriod: 345600
+      ReceiveMessageWaitTimeSeconds: 20
+      RedrivePolicy:
+        deadLetterTargetArn:
+          Fn::GetAtt:
+            - DeadLettersBBF8BAAB
+            - Arn
+        maxReceiveCount: 3
+      SqsManagedSseEnabled: true
+      Tags:
+        - Key: Project
+          Value: Minti-v2
+      VisibilityTimeout: 60
+    UpdateReplacePolicy: Delete
+    DeletionPolicy: Delete
+    Metadata:
+      aws:cdk:path: MintiV2/BudgetEvents/Resource
+  BudgetEventsPolicy8550542C:
+    Type: AWS::SQS::QueuePolicy
+    Properties:
+      PolicyDocument:
+        Statement:
+          - Action: sqs:*
+            Condition:
+              Bool:
+                aws:SecureTransport: "false"
+            Effect: Deny
+            Principal:
+              AWS: "*"
+            Resource:
+              Fn::GetAtt:
+                - BudgetEventsD4AB1FEA
+                - Arn
+        Version: "2012-10-17"
+      Queues:
+        - Ref: BudgetEventsD4AB1FEA
+    Metadata:
+      aws:cdk:path: MintiV2/BudgetEvents/Policy/Resource
+  ApplicationLogsAF17AEF2:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      RetentionInDays: 7
+      Tags:
+        - Key: Project
+          Value: Minti-v2
+    UpdateReplacePolicy: Delete
+    DeletionPolicy: Delete
+    Metadata:
+      aws:cdk:path: MintiV2/ApplicationLogs/Resource
+  DeadLetterAlarmBB7AE56D:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmDescription: Budget event exhausted retries. Inspect event_processing_failed logs and DLQ; repair before replay.
+      ComparisonOperator: GreaterThanOrEqualToThreshold
+      Dimensions:
+        - Name: QueueName
+          Value:
+            Fn::GetAtt:
+              - DeadLettersBBF8BAAB
+              - QueueName
+      EvaluationPeriods: 1
+      MetricName: ApproximateNumberOfMessagesVisible
+      Namespace: AWS/SQS
+      Period: 60
+      Statistic: Maximum
+      Tags:
+        - Key: Project
+          Value: Minti-v2
+      Threshold: 1
+      TreatMissingData: notBreaching
+    Metadata:
+      aws:cdk:path: MintiV2/DeadLetterAlarm/Resource
+  InstanceRole3CCE2F1D:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: sts:AssumeRole
+            Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+        Version: "2012-10-17"
+      ManagedPolicyArns:
+        - Fn::Join:
+            - ""
+            - - "arn:"
+              - Ref: AWS::Partition
+              - :iam::aws:policy/AmazonSSMManagedInstanceCore
+      Tags:
+        - Key: Project
+          Value: Minti-v2
+    Metadata:
+      aws:cdk:path: MintiV2/InstanceRole/Resource
+  InstanceRoleDefaultPolicy1531605C:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyDocument:
+        Statement:
+          - Action:
+              - sqs:SendMessage
+              - sqs:GetQueueAttributes
+              - sqs:GetQueueUrl
+            Effect: Allow
+            Resource:
+              Fn::GetAtt:
+                - BudgetEventsD4AB1FEA
+                - Arn
+          - Action:
+              - sqs:ReceiveMessage
+              - sqs:ChangeMessageVisibility
+              - sqs:GetQueueUrl
+              - sqs:DeleteMessage
+              - sqs:GetQueueAttributes
+            Effect: Allow
+            Resource:
+              Fn::GetAtt:
+                - BudgetEventsD4AB1FEA
+                - Arn
+          - Action:
+              - logs:CreateLogStream
+              - logs:PutLogEvents
+            Effect: Allow
+            Resource:
+              Fn::GetAtt:
+                - ApplicationLogsAF17AEF2
+                - Arn
+          - Action:
+              - s3:GetObject*
+              - s3:GetBucket*
+              - s3:List*
+            Effect: Allow
+            Resource:
+              - Fn::Join:
+                  - ""
+                  - - "arn:"
+                    - Ref: AWS::Partition
+                    - ":s3:::"
+                    - Fn::Sub: cdk-hnb659fds-assets-${AWS::AccountId}-us-east-1
+              - Fn::Join:
+                  - ""
+                  - - "arn:"
+                    - Ref: AWS::Partition
+                    - ":s3:::"
+                    - Fn::Sub: cdk-hnb659fds-assets-${AWS::AccountId}-us-east-1
+                    - /*
+        Version: "2012-10-17"
+      PolicyName: InstanceRoleDefaultPolicy1531605C
+      Roles:
+        - Ref: InstanceRole3CCE2F1D
+    Metadata:
+      aws:cdk:path: MintiV2/InstanceRole/DefaultPolicy/Resource
+  ApplicationInstanceProfile1094D0A0:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles:
+        - Ref: InstanceRole3CCE2F1D
+    Metadata:
+      aws:cdk:path: MintiV2/Application/InstanceProfile
+  ApplicationD9CED6CE:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvailabilityZone:
+        Fn::Select:
+          - 0
+          - Fn::GetAZs: ""
+      BlockDeviceMappings:
+        - DeviceName: /dev/xvda
+          Ebs:
+            DeleteOnTermination: false
+            Encrypted: true
+            VolumeSize: 30
+            VolumeType: gp3
+      IamInstanceProfile:
+        Ref: ApplicationInstanceProfile1094D0A0
+      ImageId:
+        Ref: SsmParameterValueawsserviceamiamazonlinuxlatestal2023amikernel61x8664C96584B6F00A464EAD1953AFF4B05118Parameter
+      InstanceType: t3.small
+      MetadataOptions:
+        HttpPutResponseHopLimit: 2
+        HttpTokens: required
+      SecurityGroupIds:
+        - Fn::GetAtt:
+            - PrivateAccess24FE8EB6
+            - GroupId
+      SubnetId:
+        Ref: VpcoutboundSubnet1SubnetAA1ECF24
+      Tags:
+        - Key: Name
+          Value: MintiV2/Application
+        - Key: Project
+          Value: Minti-v2
+      UserData:
+        Fn::Base64:
+          Fn::Join:
+            - ""
+            - - |-
+                #!/bin/bash
+                set -eu
+                dnf install -y docker unzip
+                systemctl enable --now docker
+                mkdir -p /usr/local/lib/docker/cli-plugins /opt/minti
+                cd /tmp
+                curl -fsSLO https://github.com/docker/compose/releases/download/v2.39.4/docker-compose-linux-x86_64
+                curl -fsSL https://github.com/docker/compose/releases/download/v2.39.4/checksums.txt -o compose-checksums.txt
+                grep '[ *]docker-compose-linux-x86_64$' compose-checksums.txt | sha256sum -c -
+                install -m 755 docker-compose-linux-x86_64 /usr/local/lib/docker/cli-plugins/docker-compose
+                aws s3 cp s3://
+              - Fn::Sub: cdk-hnb659fds-assets-${AWS::AccountId}-us-east-1
+              - |-
+                /ecc3175b1b3539a188ea7e6579ab50f5657f5a12ebd2bd802a1a5d7e844e3650.zip /tmp/minti.zip --region us-east-1
+                unzip -o /tmp/minti.zip -d /opt/minti
+                cd /opt/minti
+                export AWS_REGION='us-east-1' SQS_QUEUE_URL='
+              - Ref: BudgetEventsD4AB1FEA
+              - "' CLOUDWATCH_LOG_GROUP='"
+              - Ref: ApplicationLogsAF17AEF2
+              - |-
+                '
+                bash scripts/bootstrap-instance.sh
+    DependsOn:
+      - InstanceRoleDefaultPolicy1531605C
+      - InstanceRole3CCE2F1D
+    Metadata:
+      aws:cdk:path: MintiV2/Application/Resource
+  CDKMetadata:
+    Type: AWS::CDK::Metadata
+    Properties:
+      Analytics: v2:deflate64:H4sIAAAAAAAA/1WPQW/CMAyFfwv3kLGyabsWDghp0rp24orcYEpomrDYWYWi/vepLVDtEn/vOfKzE5m8vcrFDFqaq0M9N7qUsWBQtYCW9hFVIuPuosT6aHfZWmShNFoVobTIvTdR7gLjN5QGJ3/yUiKnNLB29vG5h61l9BZ5A4wtXG8xN5Uygzo1aFkUqILXfN14Fy5DwD9ja4nBqtvIkTtBPyTjV8Aw+CMMb+aMVteHOcpOGFeRjB+ueqTcuRPKuHBogdVJxtSAb/r2AJ3Q0MiYu/HyoU4BE933yrw7atOvt9wDETLJtC+ClnIVVI28AsJO5EgueIVi6BYMlbbVMBI8NMjoe/EZ+BK4E9YdUJ7p6Td5kc/vcjE7k9ZzHyzrBmU+1j9LPydb7gEAAA==
+    Metadata:
+      aws:cdk:path: MintiV2/CDKMetadata/Default
+Parameters:
+  SsmParameterValueawsserviceamiamazonlinuxlatestal2023amikernel61x8664C96584B6F00A464EAD1953AFF4B05118Parameter:
+    Type: AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>
+    Default: /aws/service/ami-amazon-linux-latest/al2023-ami-kernel-6.1-x86_64
+  BootstrapVersion:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /cdk-bootstrap/hnb659fds/version
+    Description: Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
+Outputs:
+  InstanceId:
+    Value:
+      Ref: ApplicationD9CED6CE
+  QueueUrl:
+    Value:
+      Ref: BudgetEventsD4AB1FEA
+  DeadLetterUrl:
+    Value:
+      Ref: DeadLettersBBF8BAAB
+  LogGroup:
+    Value:
+      Ref: ApplicationLogsAF17AEF2
+  SourceUri:
+    Value:
+      Fn::Join:
+        - ""
+        - - s3://
+          - Fn::Sub: cdk-hnb659fds-assets-${AWS::AccountId}-us-east-1
+          - /ecc3175b1b3539a188ea7e6579ab50f5657f5a12ebd2bd802a1a5d7e844e3650.zip
+
+85 feature flags are not configured. Run 'cdk flags --unstable=flags' to learn more.

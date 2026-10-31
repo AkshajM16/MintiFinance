@@ -1,0 +1,450 @@
+{"timestamp": "2026-10-30T23:54:52.279670+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2d9993d0-8659-4ad8-90e6-dc9a05396b1b", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.285015+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "60f81a57-80e9-44ff-b89a-cdff1de5b8d4", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.290091+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9ec63bb8-af9b-4827-8838-516ce2d401a5", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.295929+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2416e95d-8b0a-4a83-9327-c96692678196", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.300811+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "ff029bf3-6cbe-462a-9349-03dee936a010", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.306303+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "46327ecb-d84f-4ece-b7ae-0fee26b7470a", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.312043+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a9eee4b5-8098-432b-bac1-66315e8aa086", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.317867+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f369dde1-da4c-4495-8f76-84c2982ae191", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.322843+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "82b48cb2-e224-4047-b908-b8d8f50095be", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.328906+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c18481b4-a6c1-4293-a3c9-edea11ffa5b4", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.333054+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4e1705e4-70ad-48c5-b8b3-c58cc59dc1ee", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.338083+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "300b53cd-7802-4413-8978-7d1e9c294a66", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.343664+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "47b69ce9-ace1-4735-9f1c-349482e2cdd6", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.348510+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "e1075bcf-a0ea-4e23-b4de-aefa242ebfa0", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.353947+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "edc8cd1d-1ae2-4771-8d52-721cfb7841a7", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.359500+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "59f3be17-9599-4fa2-bee6-53247d59ce40", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.365109+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "69699281-521a-450b-bce8-cfcc0533551c", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.370391+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "57a05d33-c391-46c3-b849-bb578fc8c948", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.375605+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c91775d5-cc8b-4910-ace2-f3c3d95257a9", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.379755+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "ea73ef49-051e-468e-a55f-651878b611e1", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.384764+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f40906f2-255f-4a6f-8d83-a62bf1f3850d", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.390341+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "8056e04c-8723-40d0-ad07-09fdfbf71c61", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.394378+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "476ff866-d731-467f-a1f9-e367797b6714", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.399953+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "0fc2bbf7-6f0a-452f-91e4-9c076283ae9a", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.404083+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f7f0cc56-3a6f-4e98-b38b-55097274619a", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.409120+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9c4deb29-5987-40b2-8c14-f21f23a9b078", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.412950+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "91c8caa4-0139-46ed-a94a-657e0d047d17", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.417013+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "0579236f-d76d-45fe-93e7-896d625f61e2", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.422575+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "e2a6abbb-da26-4f27-92fb-08e31e0ba132", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.428422+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9adc98b7-4ae3-40a0-84e4-7a8e4cb78b40", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.434209+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "11867c55-6580-43e8-a858-6ae49a69725d", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.436790+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "edc8cd1d-1ae2-4771-8d52-721cfb7841a7"}
+{"timestamp": "2026-10-30T23:54:52.444082+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "94ef3480-ecb8-46a9-a557-8d62688dee89", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.450571+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "0667702d-c2c8-4846-9dc9-9568971bb359", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.456850+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "b72a07a6-ad0c-4e2d-8d88-9e4cda6b8086", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.463501+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d8263e87-d2d8-495b-9315-6a0d6f7047ff", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.470171+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9bbbcb92-3ea2-43ce-bd9d-5e8efe8f3249", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.472762+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "11867c55-6580-43e8-a858-6ae49a69725d"}
+{"timestamp": "2026-10-30T23:54:52.475326+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "d8263e87-d2d8-495b-9315-6a0d6f7047ff"}
+{"timestamp": "2026-10-30T23:54:52.481249+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "df8dae03-589c-472b-a934-64e60208908f", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.487571+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2e3b7e9e-d6e1-45c6-b933-710428ab512f", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.490758+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "8056e04c-8723-40d0-ad07-09fdfbf71c61"}
+{"timestamp": "2026-10-30T23:54:52.497544+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d474bf0f-3f27-47c7-841f-6c50ff17ef80", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.504370+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "249db991-d1c2-4caa-a4a6-1529708b0865", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.507012+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "9ec63bb8-af9b-4827-8838-516ce2d401a5"}
+{"timestamp": "2026-10-30T23:54:52.509843+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "d8263e87-d2d8-495b-9315-6a0d6f7047ff"}
+{"timestamp": "2026-10-30T23:54:52.517082+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "959ba58b-af2e-4116-b213-26a1f8206299", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.524237+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "8e1232ad-4410-465e-9c20-01385de226f4", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.531148+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "12ef3549-a288-4432-9105-f9cadac80a98", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.536360+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "17306be4-246e-4c3e-9ac1-da73669bbc38", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.541569+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d71af05d-d0b7-4f4f-a5d9-caca15bb6604", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.546317+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2c75e550-904f-4cf4-b672-0cb97a52e2d1", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.548898+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "8e1232ad-4410-465e-9c20-01385de226f4"}
+{"timestamp": "2026-10-30T23:54:52.553739+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a5f017dc-d7da-4965-9427-6c63f27fe7d8", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.556557+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "df8dae03-589c-472b-a934-64e60208908f"}
+{"timestamp": "2026-10-30T23:54:52.561382+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "dc7e9d94-2363-4ff5-8ab7-c516a4c2fa06", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.566040+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d8c94eff-66a5-46af-a136-739cbd078c14", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.568553+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "2416e95d-8b0a-4a83-9327-c96692678196"}
+{"timestamp": "2026-10-30T23:54:52.575967+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "34f4b5fa-4f09-4d40-8186-bd3695c096f3", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.581429+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "5f3cbca1-9364-49a2-bd46-1ed59c7bcbef", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.587628+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "5efdf546-2e0f-408f-a5e3-bf8fac276b6d", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.594753+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "ac6d498f-379d-4f27-b86a-42d9054dc877", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.602252+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "14308dda-bfe6-44bd-af5d-4dc3717c8435", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.605023+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "91c8caa4-0139-46ed-a94a-657e0d047d17"}
+{"timestamp": "2026-10-30T23:54:52.607737+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "f369dde1-da4c-4495-8f76-84c2982ae191"}
+{"timestamp": "2026-10-30T23:54:52.610586+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "249db991-d1c2-4caa-a4a6-1529708b0865"}
+{"timestamp": "2026-10-30T23:54:52.613436+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "300b53cd-7802-4413-8978-7d1e9c294a66"}
+{"timestamp": "2026-10-30T23:54:52.620628+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "8dfab182-3e17-451c-967f-cbd010098c42", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.623638+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "c91775d5-cc8b-4910-ace2-f3c3d95257a9"}
+{"timestamp": "2026-10-30T23:54:52.631080+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "25a1f00a-2fe1-4779-9405-8550af0598a4", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.633916+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "c91775d5-cc8b-4910-ace2-f3c3d95257a9"}
+{"timestamp": "2026-10-30T23:54:52.639786+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "65c3fb41-c0f1-4f7e-abc5-5b391c6e6144", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.646538+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "0934dc53-7896-48bb-8269-6412c66e1ce2", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.649031+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "edc8cd1d-1ae2-4771-8d52-721cfb7841a7"}
+{"timestamp": "2026-10-30T23:54:52.655060+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f6e65f92-2acf-40b9-b406-b00acb1c82b3", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.657644+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "11867c55-6580-43e8-a858-6ae49a69725d"}
+{"timestamp": "2026-10-30T23:54:52.660180+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "476ff866-d731-467f-a1f9-e367797b6714"}
+{"timestamp": "2026-10-30T23:54:52.662795+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "8e1232ad-4410-465e-9c20-01385de226f4"}
+{"timestamp": "2026-10-30T23:54:52.670598+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "37ef06f4-1271-48cc-b905-fc2808dd8ddb", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.673241+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "d8c94eff-66a5-46af-a136-739cbd078c14"}
+{"timestamp": "2026-10-30T23:54:52.680804+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9860da3b-d9c6-4d42-b182-f4d850c44725", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.683573+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "14308dda-bfe6-44bd-af5d-4dc3717c8435"}
+{"timestamp": "2026-10-30T23:54:52.689314+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "144a69fd-2e8a-4b03-b37f-8d5926053011", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.691896+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "0fc2bbf7-6f0a-452f-91e4-9c076283ae9a"}
+{"timestamp": "2026-10-30T23:54:52.697296+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d5716d29-0738-4cb9-84b7-875d4d6c0047", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.700231+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "df8dae03-589c-472b-a934-64e60208908f"}
+{"timestamp": "2026-10-30T23:54:52.708624+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "493282ac-2b9d-4909-9ea2-9131b863af40", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.711708+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "9ec63bb8-af9b-4827-8838-516ce2d401a5"}
+{"timestamp": "2026-10-30T23:54:52.714648+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "59f3be17-9599-4fa2-bee6-53247d59ce40"}
+{"timestamp": "2026-10-30T23:54:52.722900+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "62ae079d-9082-45e2-a073-7a214f77d6b9", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.729663+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "386837ef-5f37-4380-89cf-ae1858aeefff", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.732385+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "2416e95d-8b0a-4a83-9327-c96692678196"}
+{"timestamp": "2026-10-30T23:54:52.739819+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "aea18169-14c5-428c-9638-ab8dab089087", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.744723+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f8d58c5e-4e2d-4e48-9071-ce4bc1f7baf1", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.752152+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c6b0fb52-6a5d-4f28-9740-632f2fb7a2af", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.757119+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "5a34ead9-50f3-427f-9b5f-2f92e1f2c425", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.759826+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "f7f0cc56-3a6f-4e98-b38b-55097274619a"}
+{"timestamp": "2026-10-30T23:54:52.766237+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "ba867753-257c-4bc5-a35c-a55a5c6c6457", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.769030+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "91c8caa4-0139-46ed-a94a-657e0d047d17"}
+{"timestamp": "2026-10-30T23:54:52.774225+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "78429e5a-ec88-4d7c-85fb-75cc9e61c853", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.776838+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "f369dde1-da4c-4495-8f76-84c2982ae191"}
+{"timestamp": "2026-10-30T23:54:52.784913+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f4b27d91-6859-4de0-a4fe-a7cf3cf770a3", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.792667+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "058bb629-d2b7-4005-af33-63de115864c7", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.799449+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "7b3ef9e1-14a2-4e78-b352-64df038dc72a", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.802436+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "c18481b4-a6c1-4293-a3c9-edea11ffa5b4"}
+{"timestamp": "2026-10-30T23:54:52.810402+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4a8bff24-162d-4b4c-b530-d97d3a03b732", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.818399+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "71b953e2-9d43-429d-b75d-2e533c5673c4", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.826328+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "b1d722b4-b07c-46c7-afb9-4bc6110565db", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.829247+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "f7f0cc56-3a6f-4e98-b38b-55097274619a"}
+{"timestamp": "2026-10-30T23:54:52.837787+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "075e072a-84d4-445f-ad67-636041421999", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.843178+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a7406146-aed1-42a9-9fcd-120b37aff719", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.849979+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "ffb28cf1-6cf1-45a5-8037-6240cf1f3194", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.855441+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "541aad36-c783-4a40-aec8-5696371faaa0", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.858308+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "249db991-d1c2-4caa-a4a6-1529708b0865"}
+{"timestamp": "2026-10-30T23:54:52.861241+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "c18481b4-a6c1-4293-a3c9-edea11ffa5b4"}
+{"timestamp": "2026-10-30T23:54:52.866622+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "55d9a6fa-25cc-4513-9dd4-7ac89697fbb3", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.869185+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "0fc2bbf7-6f0a-452f-91e4-9c076283ae9a"}
+{"timestamp": "2026-10-30T23:54:52.875376+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f2a31375-5a76-431a-9fee-7d34c3baa197", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.882333+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "55195110-d9cb-4083-b607-c53aa56040ed", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.885395+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "59f3be17-9599-4fa2-bee6-53247d59ce40"}
+{"timestamp": "2026-10-30T23:54:52.891644+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "5f42e70f-16ed-4a6e-92bd-4476b2c6bc1f", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.899386+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "01c4a83c-81a2-4155-8199-77011896a289", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.902448+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "2d9993d0-8659-4ad8-90e6-dc9a05396b1b"}
+{"timestamp": "2026-10-30T23:54:52.905496+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "300b53cd-7802-4413-8978-7d1e9c294a66"}
+{"timestamp": "2026-10-30T23:54:52.913344+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "1854866c-4ff9-4aa9-b2a5-e5ce28e0469a", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.916335+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "2e3b7e9e-d6e1-45c6-b933-710428ab512f"}
+{"timestamp": "2026-10-30T23:54:52.919412+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "2d9993d0-8659-4ad8-90e6-dc9a05396b1b"}
+{"timestamp": "2026-10-30T23:54:52.922460+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "d8c94eff-66a5-46af-a136-739cbd078c14"}
+{"timestamp": "2026-10-30T23:54:52.925575+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "8dfab182-3e17-451c-967f-cbd010098c42"}
+{"timestamp": "2026-10-30T23:54:52.928648+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "959ba58b-af2e-4116-b213-26a1f8206299"}
+{"timestamp": "2026-10-30T23:54:52.931846+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "14308dda-bfe6-44bd-af5d-4dc3717c8435"}
+{"timestamp": "2026-10-30T23:54:52.940825+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2e4b456c-fa2f-43a1-aaae-d3be604bfc46", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.948799+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4d78cce6-6218-435b-805b-3c21b4bb8e63", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.951692+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "2e3b7e9e-d6e1-45c6-b933-710428ab512f"}
+{"timestamp": "2026-10-30T23:54:52.954498+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "476ff866-d731-467f-a1f9-e367797b6714"}
+{"timestamp": "2026-10-30T23:54:52.961761+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "379b5b0c-185f-4e30-9008-466356fb8c0b", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.968778+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "e6ad3cdd-b5a6-432b-b6f6-ed3e5f0acb83", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.975024+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "af169133-c471-4fae-88e1-b0578cfcf4ac", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:52.984044+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "cbd28471-382f-4032-aa67-5ee7a0b997fe", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:52.990526+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "6fa243aa-d27c-4521-86b5-c3213f9a34db", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:52.999095+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "adb98090-2136-46a3-add5-532854a8373a", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.002612+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "8056e04c-8723-40d0-ad07-09fdfbf71c61"}
+{"timestamp": "2026-10-30T23:54:53.015050+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f9ce1c87-f7c8-49c2-baca-039fee76dcf4", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.018889+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "55d9a6fa-25cc-4513-9dd4-7ac89697fbb3"}
+{"timestamp": "2026-10-30T23:54:53.022148+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "8dfab182-3e17-451c-967f-cbd010098c42"}
+{"timestamp": "2026-10-30T23:54:53.032816+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "498e5b0b-f386-4dc1-b4bb-b84191a0aa34", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.038046+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "959ba58b-af2e-4116-b213-26a1f8206299"}
+{"timestamp": "2026-10-30T23:54:53.042342+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "55d9a6fa-25cc-4513-9dd4-7ac89697fbb3"}
+{"timestamp": "2026-10-30T23:54:53.052197+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "b77b2b5c-2694-4a19-8803-a533e61caf1c", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.061432+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9ed41135-a1ea-4423-bb4e-706775d11a7d", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.150469+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9639583b-a40e-402c-9f6d-6cfa0593ddcf", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.151228+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "0f686a1b-c74c-4255-92f2-c5757e963b05", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.151520+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4712aa63-319b-4140-86f6-5adb3c74a617", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.151778+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "7687cac1-ae7c-408d-87f0-e155497a817a", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.161399+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "941333b1-b9f4-468e-9f23-90747acfb696", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.161868+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "7091d524-fe51-496c-871a-d74086e78423", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.162186+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "ee536cc5-d1d4-4b22-9128-fb8653d9128d", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.162520+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "7a9c9494-10e2-47a1-ad18-77cf4c3984b6", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.170014+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "27f3fea6-d7ee-41e7-a1dc-1a0b0f7d6914", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.170173+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "fa5c7ca8-8f9d-4585-b17c-fb5cff4b6ddf", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.173050+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "1b71ed38-ba02-4ef0-b4c4-ed724e92664b", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.174400+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d170f439-195f-4403-a911-d93774559fee", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.180354+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2f4d9764-77ed-4580-9217-d69afccc819e", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.181058+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "278680d6-63e7-465c-9e67-77f4db4df930", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.181979+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f6842266-7888-4f38-b340-fade30791fff", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.182681+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d2cc481a-43d6-4252-bfc0-7d3f2e3ac31d", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.186631+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "1b71ed38-ba02-4ef0-b4c4-ed724e92664b"}
+{"timestamp": "2026-10-30T23:54:53.190109+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c5e7828a-c7ed-4a7c-8c03-80fb259be2be", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.190756+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "58cdf4b7-c950-467f-aed6-7bcb450fd5dd", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.192008+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9f58c4d5-6dab-416a-8e16-c857ac8fc19b", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.197416+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "601b322c-fa09-49c2-a816-136a63c7b518", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.197660+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "fedeec2f-7c63-437e-b88a-dff0ef0ce612", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.200175+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4a9933de-35c2-4429-a88b-d81fba9d8c11", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.200446+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c8bd45cb-96bc-4237-9af6-aabe91d610eb", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.208591+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "76ff18df-b554-45fa-aba3-0e0bff240b3b", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.208769+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "ad1469e3-d8dc-42b6-9ffc-9e7bb69c5465", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.210478+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d1b71e6d-9559-4122-afac-a0422c513f20", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.210627+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9a1e1ceb-c344-4e40-a115-bbd63e1276b1", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.214132+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "2f4d9764-77ed-4580-9217-d69afccc819e"}
+{"timestamp": "2026-10-30T23:54:53.217435+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "67238b8b-4798-4aa0-bdbc-68cd955d512a", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.222320+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "7e0e00e3-4ebd-42eb-9574-e2f7563772e9", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.222424+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "d170f439-195f-4403-a911-d93774559fee"}
+{"timestamp": "2026-10-30T23:54:53.222974+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "eec60a34-b784-4989-8a0b-5fb3ad133dc4", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.223757+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "1b1d57dd-feb3-47ed-9246-d3c33d0c1ea9", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.227263+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "4712aa63-319b-4140-86f6-5adb3c74a617"}
+{"timestamp": "2026-10-30T23:54:53.230240+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f5fae3eb-a476-469a-93ea-ea575128e61a", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.230557+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a72e224c-3652-439f-bf2b-d9e6a9c51e10", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.233181+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "16addae8-d23f-474e-a640-b27d9867c717", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.234164+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "1b71ed38-ba02-4ef0-b4c4-ed724e92664b"}
+{"timestamp": "2026-10-30T23:54:53.234560+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "63334dad-2f3b-4ac0-b991-ce9d967088b7", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.237045+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "7091d524-fe51-496c-871a-d74086e78423"}
+{"timestamp": "2026-10-30T23:54:53.237825+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "2f4d9764-77ed-4580-9217-d69afccc819e"}
+{"timestamp": "2026-10-30T23:54:53.238596+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "3bea3845-92de-4247-8eba-f8007d8edb32", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.241301+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "c5e7828a-c7ed-4a7c-8c03-80fb259be2be"}
+{"timestamp": "2026-10-30T23:54:53.242901+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2b9985ea-4dd8-4d1b-b36e-1bd1d1a9ee9a", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.245079+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "28f052e0-5420-42c0-b66f-d97f9e063b35", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.247202+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9b255aa6-2663-4f8b-9deb-f9be11ecf7ad", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.248524+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "58cdf4b7-c950-467f-aed6-7bcb450fd5dd"}
+{"timestamp": "2026-10-30T23:54:53.252255+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "7cdb70dc-bb4e-4a5d-98df-cf906fc84e90", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.252530+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "3f5713bc-c702-4195-814d-d477be166635", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.255399+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "4712aa63-319b-4140-86f6-5adb3c74a617"}
+{"timestamp": "2026-10-30T23:54:53.259122+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d0c506b0-b7ff-4e0f-aa64-a60289591216", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.259713+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4ff3c883-c17f-4564-adf0-128670cf1809", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.263247+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d06296e0-b5df-4013-af06-85e3a84b3798", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.263842+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "0f686a1b-c74c-4255-92f2-c5757e963b05"}
+{"timestamp": "2026-10-30T23:54:53.265328+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "08700769-a5c8-48c1-8e2d-f4e0f6fbd1b0", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.267933+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "3bea3845-92de-4247-8eba-f8007d8edb32"}
+{"timestamp": "2026-10-30T23:54:53.269423+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "b72bb841-60c5-46ab-bb46-b2f4eaa51ed9", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.272485+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "092ba9c2-8653-4214-8325-dc55a8bd5838", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.275464+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "8b1ed605-7ae2-4e4b-8354-630c3fa6adb4", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.276451+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a2c0a619-9cfc-4324-90d6-81686ef087f4", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.278971+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d739313b-d2dc-4ce7-9f19-9f1395bb7b92", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.279815+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "ad1469e3-d8dc-42b6-9ffc-9e7bb69c5465"}
+{"timestamp": "2026-10-30T23:54:53.280509+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "92d928e1-989d-4f75-b7a3-e6ad26da1832", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.283925+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a3f0e4c1-b21e-4c03-8584-53b6db782378", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.288165+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "d06296e0-b5df-4013-af06-85e3a84b3798"}
+{"timestamp": "2026-10-30T23:54:53.288772+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c7c1c620-f852-4276-a453-567d343ca501", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.289351+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "8a5ca798-4543-4bc9-ab0d-bc8eb9a676ac", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.290664+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "8af02c88-f244-4a03-bbb3-5a3ae433ef3c", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.296450+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "3a7ccb9c-9d48-4607-b75b-96a363671d9b", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.298124+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a8cafdcc-6c0e-490d-ae2c-fbc03e642b32", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.299473+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2b1c3778-4f3f-4911-8377-25c065a263e6", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.300769+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "d06296e0-b5df-4013-af06-85e3a84b3798"}
+{"timestamp": "2026-10-30T23:54:53.300906+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "1d2ba518-eaa3-48b9-927c-cb97c20ad6ff", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.302568+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "d2cc481a-43d6-4252-bfc0-7d3f2e3ac31d"}
+{"timestamp": "2026-10-30T23:54:53.304830+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "3bea3845-92de-4247-8eba-f8007d8edb32"}
+{"timestamp": "2026-10-30T23:54:53.306773+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "3ca66ef6-e54c-43ff-8b58-6d1d65e2c5f2", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.310396+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "7a9c9494-10e2-47a1-ad18-77cf4c3984b6"}
+{"timestamp": "2026-10-30T23:54:53.310504+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "79263299-ffb7-4f4c-bff4-a45304b2736c", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.311599+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "3e6586e5-882b-40f4-b759-84b0c0f04cb7", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.312843+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "0ac03749-631f-4f6f-9f0f-b35942e401bd", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.314971+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "3ca66ef6-e54c-43ff-8b58-6d1d65e2c5f2"}
+{"timestamp": "2026-10-30T23:54:53.315114+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "2b9985ea-4dd8-4d1b-b36e-1bd1d1a9ee9a"}
+{"timestamp": "2026-10-30T23:54:53.315971+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "0f686a1b-c74c-4255-92f2-c5757e963b05"}
+{"timestamp": "2026-10-30T23:54:53.318116+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "df33c33b-0590-4009-9db4-a13368de1cf1", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.319102+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "a3f0e4c1-b21e-4c03-8584-53b6db782378"}
+{"timestamp": "2026-10-30T23:54:53.321842+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "74854417-1825-4d43-9bba-7cdc1d508e2d", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.325787+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "0ac03749-631f-4f6f-9f0f-b35942e401bd"}
+{"timestamp": "2026-10-30T23:54:53.326707+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "e165e17d-c021-45c1-8aef-ec0605d4a8ae", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.327810+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "dcc85596-0e38-4816-9d46-e8300f428e76", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.328526+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "7f36a391-0979-4aeb-8174-a2f78e6031bb", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.329611+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "a3f0e4c1-b21e-4c03-8584-53b6db782378"}
+{"timestamp": "2026-10-30T23:54:53.333660+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4fd34617-7658-44db-9b7a-7fe38d12249d", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.338415+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "d170f439-195f-4403-a911-d93774559fee"}
+{"timestamp": "2026-10-30T23:54:53.338547+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "fe51df1b-0747-4cb2-b391-4f81bf81992c", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.340074+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c80f55d7-94cc-428f-9bf9-ee7c0219131b", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.340827+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f74fa684-cb06-450e-b530-352c121ddc0d", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.343051+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "601b322c-fa09-49c2-a816-136a63c7b518"}
+{"timestamp": "2026-10-30T23:54:53.343331+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "0ac03749-631f-4f6f-9f0f-b35942e401bd"}
+{"timestamp": "2026-10-30T23:54:53.344283+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "8af02c88-f244-4a03-bbb3-5a3ae433ef3c"}
+{"timestamp": "2026-10-30T23:54:53.350146+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "16206478-fb94-422c-8600-ebbe8798e418", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.351816+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "3c501e49-0c12-4323-9155-93c7677aa97a", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.352629+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "0389644d-63fb-49fd-a0d5-47e3cef56700", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.353380+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a1ca2a19-c4bd-499c-8da2-0120e48251df", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.362077+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "ad1469e3-d8dc-42b6-9ffc-9e7bb69c5465"}
+{"timestamp": "2026-10-30T23:54:53.368879+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "601b322c-fa09-49c2-a816-136a63c7b518"}
+{"timestamp": "2026-10-30T23:54:53.368999+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "ac63a4e2-deb4-4fbc-bd83-490b4ff3b813", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.369348+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2cfa9119-2267-4f8f-a778-96010762e784", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.370130+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "ac63a4e2-deb4-4fbc-bd83-490b4ff3b813"}
+{"timestamp": "2026-10-30T23:54:53.376403+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "76ff18df-b554-45fa-aba3-0e0bff240b3b"}
+{"timestamp": "2026-10-30T23:54:53.376641+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "ee536cc5-d1d4-4b22-9128-fb8653d9128d"}
+{"timestamp": "2026-10-30T23:54:53.382106+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "71565bf4-e0d0-4075-85b4-a8b696ade9f2", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.389064+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "ee536cc5-d1d4-4b22-9128-fb8653d9128d"}
+{"timestamp": "2026-10-30T23:54:53.390335+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2993a203-eeb0-4fd5-93c8-b65abb9e45d6", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.399310+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a1746aaa-80b5-4f98-b71a-1dac5a954da5", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.399581+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4eaa9f74-03ef-40b0-820b-4bead6070012", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.446063+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "3ca66ef6-e54c-43ff-8b58-6d1d65e2c5f2"}
+{"timestamp": "2026-10-30T23:54:53.459356+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "d2cc481a-43d6-4252-bfc0-7d3f2e3ac31d"}
+{"timestamp": "2026-10-30T23:54:53.460132+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "7a9c9494-10e2-47a1-ad18-77cf4c3984b6"}
+{"timestamp": "2026-10-30T23:54:53.461454+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9c91f65e-dddf-4869-8e0a-a7d821949464", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.465046+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "2b9985ea-4dd8-4d1b-b36e-1bd1d1a9ee9a"}
+{"timestamp": "2026-10-30T23:54:53.466269+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "74854417-1825-4d43-9bba-7cdc1d508e2d"}
+{"timestamp": "2026-10-30T23:54:53.466713+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "3dbf22c1-abcb-4d84-999c-463c516d9a01", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.469217+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "bb1efe6e-c520-49d0-b7a7-1dd136227796", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.470347+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "76ff18df-b554-45fa-aba3-0e0bff240b3b"}
+{"timestamp": "2026-10-30T23:54:53.476055+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "9a1e1ceb-c344-4e40-a115-bbd63e1276b1"}
+{"timestamp": "2026-10-30T23:54:53.477523+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f00b9dbe-96a5-4a44-92b4-46b2b75e13a6", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.478585+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "fdbce4a7-f8b9-4637-917a-b1eeef4e6338", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.481662+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4cedda24-9fbc-4e50-81e6-48702e35f1bd", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.483093+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "c5e7828a-c7ed-4a7c-8c03-80fb259be2be"}
+{"timestamp": "2026-10-30T23:54:53.486516+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "74854417-1825-4d43-9bba-7cdc1d508e2d"}
+{"timestamp": "2026-10-30T23:54:53.486738+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "53bc4181-1afa-4d8d-9355-400f673a018a", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.489691+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "5b0b1754-869d-43ea-9157-1bc0b5056d2d", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.492695+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "7091d524-fe51-496c-871a-d74086e78423"}
+{"timestamp": "2026-10-30T23:54:53.495327+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "2cfa9119-2267-4f8f-a778-96010762e784"}
+{"timestamp": "2026-10-30T23:54:53.496198+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "855183c3-2fc7-4cad-8c04-49b879cbc341", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.499707+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "befbd206-1794-4d84-9ecd-6f5d3ef63ede", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.499854+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "ac63a4e2-deb4-4fbc-bd83-490b4ff3b813"}
+{"timestamp": "2026-10-30T23:54:53.500427+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "8af02c88-f244-4a03-bbb3-5a3ae433ef3c"}
+{"timestamp": "2026-10-30T23:54:53.501102+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f1b95c02-2f2b-4fcf-83a2-344b43b71eaf", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.504491+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "2cfa9119-2267-4f8f-a778-96010762e784"}
+{"timestamp": "2026-10-30T23:54:53.509098+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c1b0bc60-10a5-44d3-91a1-f02d98a72312", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.510852+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f02b73fe-c041-42f9-aa50-d015a322518a", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.513197+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "364c5d0f-c6a1-4a8c-a58a-7aaa889ee0dd", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.514906+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f3256b5a-5885-4e5f-aa73-a3a56f24b0ca", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.517982+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "9a1e1ceb-c344-4e40-a115-bbd63e1276b1"}
+{"timestamp": "2026-10-30T23:54:53.518678+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "1ec91172-8731-444b-a171-599bdfb9d820", "alerts_created": 0}
+{"timestamp": "2026-10-30T23:54:53.522662+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_duplicate", "event_id": "58cdf4b7-c950-467f-aed6-7bcb450fd5dd"}
+{"timestamp": "2026-10-30T23:54:53.522852+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "1e282af9-7ab5-4c93-8df3-ec6932e25216", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.523775+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2b79956c-0909-4952-89ed-cfa3af057119", "alerts_created": 1}
+{"timestamp": "2026-10-30T23:54:53.811120+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "cacbf793-e358-486a-a636-91a666f4851e", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.825077+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "dd1e4410-2153-4b86-9344-37a1c3293723", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.840827+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "52d12029-4df6-4efe-9e0b-90312785910f", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.854283+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "8dfd7aca-6cbe-43e7-9291-8e5ba46527f1", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.867466+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "526ca5d3-eadf-425e-ba75-c2c1c2d089c4", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.880346+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d2d6daf3-39f8-48da-801a-450642314edc", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.895157+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c3ac2e95-0f7a-43be-a993-2e22ab31dc00", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.912348+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "ef4eee95-4994-48b2-84a9-2792e70f068e", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.930436+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "84aa7d7c-4f19-4a0b-9177-d1c94f401e78", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.945900+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "6330eb10-e66e-4972-bbeb-ce6dc6bc9fa1", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.966509+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2f518a45-e4f2-48ef-88ff-1b3923fbe144", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:53.988384+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "dedeed90-f28e-4637-a521-05c016acc5ac", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.011542+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4c0e6130-d90d-47c3-a811-1221bff3e988", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.033080+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9eb0eb2f-0998-4390-b31f-1456bfbe5673", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.060858+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "73f3f04e-4655-4df2-b167-705f318f9e4d", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.086658+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "7f3f2799-99c3-4fb2-9761-b10e0fa1bd7c", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.102851+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "b54df592-1dc5-4cf2-9279-8c5e443201c5", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.132081+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "6ff15d66-87c0-4a1b-bcf1-30fb7d85598c", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.159418+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "519ab360-59b9-4a36-ab3c-818eb8454086", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.185056+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "85ad4c95-fd3f-41f0-b4fd-9cdeb81bec1c", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.207855+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "7227d27c-cae7-4537-aa0c-ef8433f2921e", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.230025+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4d4ebf7a-2f5b-4d7e-813a-972b46207ed3", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.262839+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "1b47888e-a1d8-4e84-b53d-5cf3cf90f2d2", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.286112+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "184151c0-c2ef-4c65-8f53-41d9def7d087", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.309501+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "78550da2-a762-465c-84b2-82751fd274e1", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.333912+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "3169fa23-75cd-43b2-b7ef-a4d402e62120", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.358359+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "6d1883ea-7266-445c-b791-1342fae70d1b", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.389264+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "18683178-59c5-4b3a-8825-631e061de4a6", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.446306+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "993ccefa-c8da-4113-8a18-ea7f613df913", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.462723+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "aa093d7b-77ba-4da2-a1c5-bd5f0ad1b2e8", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.479350+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "0377c70b-22f9-4ba7-a367-2e6df7ff0d02", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.494075+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "416f76e3-e96f-47bb-ad2b-1c7f5e0583f2", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.508252+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "62f95384-cdee-4747-bad1-113b6cd4ff35", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.522646+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "1a96105b-e634-4435-ad12-83e9fa163f62", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.536819+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "372a251d-54e8-4ce6-9798-db1c82f6818c", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.550295+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9a1a5122-bdbb-482b-bd10-86055c0a38e1", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.563322+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f25699b5-d0f4-45d0-9488-85dd5df8e28d", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.577155+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "082b9e34-387d-44ac-bafd-bad23c570f28", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.591222+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "36e0940a-d1d9-4e5f-aec4-fb570c18ffef", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.606362+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "b346de7c-e411-4403-b389-8a7c02faccba", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.621980+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "dcbc59d2-1469-4f21-b192-b049974d41a8", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.635904+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "552937b4-6478-4385-be07-88f2e61ec61f", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.649613+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a06ae38e-8be4-43b6-a372-eb6cdf157917", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.662450+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "450eafdf-1579-41c3-8216-2e5e64844a0b", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.678164+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "6fcd56a5-fa87-488d-9179-9bacce905ef7", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.693352+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "8348f18e-60ef-4421-8207-41097bf79de3", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.707412+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "75ef76f2-e6ba-4cf7-9469-25b486e8d447", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.721344+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "6116b414-4160-4a40-90fc-b54513b3af76", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.737719+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "fc147d6c-cd98-4734-843f-1d9277e8f50a", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.752871+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "70d266bd-9eec-45d2-b9aa-2a36376d2a60", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.768109+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "87ed458a-68c3-4bdf-bcd0-0a46639dcd81", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.781513+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "b5965b25-4565-461c-8c56-7ff11ea855e7", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.795589+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "5f30cbc1-3c4a-42ad-95fc-e87fe96e355d", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.810623+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "3e09dd99-7d0b-4570-a960-70cf01f3d3e5", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.824739+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "e445ed8f-4ea6-44dc-95c5-9f454d080526", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.837587+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9aad1297-531b-41cb-9900-356867251c21", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.850009+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "cc381caa-1faf-4e79-a783-6cfc94f19af5", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.862602+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "6c4feec0-60a6-4c44-918f-b3c0df552d5f", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.875402+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "807414c8-6e80-493f-ae0f-5c33c2e538ed", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.887960+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "076e9987-a2fb-4766-ad41-c4f61710fd2e", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.901748+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "09834adf-42c0-45ad-aa14-0539cd160ee8", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.916367+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "91736ab4-5cb7-4572-b969-f580a4b37cac", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.928891+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a2bb86b2-01c7-4cb9-8d3b-665609d91492", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.942639+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "e4896cd0-c5ba-4e4f-848a-f5faaa8f7a8f", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.955565+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "82e08e8d-ba34-4547-abf4-c448ec0e3d41", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.969158+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "85460e30-63d1-493d-81af-4626ac566985", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.982957+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "99d53e2e-6fb0-4c47-bc93-043858169975", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:54.997448+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "7eb5690d-4b01-4351-ad7c-2691e8bf8b9f", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.010349+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "78ef21b6-9146-4b56-be98-6927eb7765b3", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.023265+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "9f807aa6-65b3-4f10-96be-9b3db109dadd", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.036453+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f031d1ce-e3bb-49a6-ad93-4e24da484d12", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.050570+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4c182ac2-65cf-469b-9334-c8c856b244cc", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.063806+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "b343e4f2-f740-4a79-87c5-f96696a7884d", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.076838+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "1ed693f3-2cf3-4900-928e-b643b69374f8", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.090885+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a3cc5ad6-bb48-443e-bb4b-62408ab77269", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.105328+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "010288d6-f5f9-4467-bdbb-a1554162c0ef", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.120736+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4cb047ff-f691-46db-82fc-70048525a8b7", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.135543+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a12d31f3-820e-4b1b-be32-b6ca21e5b0fe", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.150052+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d8ae3f20-ace3-4556-aff7-65902dbde697", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.163957+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "31a41dd7-2ef9-4786-adf0-1d891b86f2da", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.177222+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "dc8d8dcf-e3d2-49f6-b4b5-7e8e09f0b3c2", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.191103+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c02686c1-5260-4bbc-8c5c-452c763aadb1", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.204565+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "e62da1d2-68ae-4ab9-a583-8f5831925a9e", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.218763+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c9aa83d6-181e-4d85-84ea-326c6866fc1c", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.236875+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "5a077945-9f8b-4bd6-b684-023a434fa6d4", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.253346+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "8124bbe4-efd4-4ba7-881d-7d8b333d870c", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.269177+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "7af632ef-a464-4dea-8a7f-4f452dbb6fd3", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.283057+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "db34b34d-df45-469c-a481-2f2f565f77a9", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.298824+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "e215b5ec-5a3f-4690-a8b5-a837ffebe035", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.312128+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "8c06393c-b6dc-454f-aa11-d8a8772955a2", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.329891+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "37773f22-d8ff-4d1f-8303-fcd42f7bcb23", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.343896+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "38d1726b-9b33-4ead-80b8-1b8be891807c", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.357795+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2debf563-e962-4110-9de2-e21077f7b60a", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.371143+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "788b5c08-b574-4e3f-b2f5-a76399d09de0", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.384254+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "0923b617-d8c3-4ddd-87e2-20ccba4c08fb", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.398934+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a1979e83-4a13-4b65-bcc5-ffe04c8092e2", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.412770+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "458f7f58-2e49-4ca5-b28e-91372f4ee954", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.431872+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f23d5994-7293-4bb8-831a-241c328988d7", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.448976+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "af92ffd0-9897-47e7-9ec9-49302c6cbba2", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.464825+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "baf68eb2-2da9-43f2-aa28-3c6fca2d114d", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.478333+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "53637426-4ec2-4e89-9343-770a0bf6f02c", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.493117+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c7987dcb-a9f1-4069-ae28-1c61d301a701", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.506479+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "2ab93d23-9124-4fb0-9e07-9917c6f04e15", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.520513+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "648b7650-14fc-4bbf-93ca-4163a36946f7", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.535656+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c491ec57-3070-4fc4-a1ef-c79567755c3b", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.552632+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "82c45ecd-d111-4656-928c-8e7a66f629e5", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.566748+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "fd57661e-98f1-42ce-b639-55982927d0d3", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.581553+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4048f506-3bfb-4db4-9412-2b9820fdb28d", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.597287+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c39c1c08-93c6-41db-b807-b805fc488ed4", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.610855+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "20d3f528-b695-4b0d-9cec-19e680783eb4", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.626186+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "65e418c1-c725-4c7c-86a6-1254983fd057", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.644260+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "7f52d1c4-7f47-4b20-b47b-da4cb4629083", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.658625+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f16dce0a-a978-4586-b867-68a6c63eb022", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.672910+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "27704641-9e11-4517-b6c1-8a284eedb510", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.686880+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "6ca41079-6e36-4e71-a94d-44b30039ff4d", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.701780+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "fd83d074-3471-4f26-bb0f-02e5312eed08", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.717581+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "3602cf55-ae85-4bff-87d2-6ae7dd265dac", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.733866+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "dbcd38b9-3658-43e0-8ee6-624e276add00", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.750483+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "d8281293-d0e2-467a-b797-ed2caff29447", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.766018+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "bd7b6792-6ea7-4532-9621-e27ce1fadac4", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.780849+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "81ed4d93-828d-4aa3-840f-d272172c9d64", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.797937+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "310af5cf-0cac-43d3-8813-6d4f0c489482", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.813964+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "ac132d31-be22-4332-938e-e92821ccd778", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.830623+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "10b37748-285b-47bd-82a7-94987b597c5e", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.849771+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "8a2d3e44-d2d1-4093-823b-2570c287deb4", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.868893+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "01512307-2ece-4356-ba25-807e5dd9d484", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.883094+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "e8134241-774e-42fb-9ee6-18142f1229b7", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.897137+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "62f70316-ec3a-42ea-b3e5-07b1b00b9e0c", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.913917+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "1cdff84a-c8a2-4b73-9c9b-5e9dd841ce9f", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.929202+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "7693ed30-f13e-4c39-8e76-c65e5635effd", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.950621+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f8e26800-6b3c-4961-9f18-6dd95d9bd461", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.966151+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "377b6b43-d93e-4292-b346-682d69fbcac2", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.980733+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "378321d4-ea2f-4316-aea4-a3a31aaf3bc2", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:55.995030+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "3e627f04-eed5-453b-9d0a-608dee31842a", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.010241+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "90b8711c-7b17-4b02-beae-8116ed45f94d", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.023509+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "58110854-0324-4120-a9aa-51e501fa6d3c", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.036269+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "4635b428-5d19-419b-b2d3-0c5336f39d1d", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.051849+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "a00d2607-867c-45f5-bc57-23a98a787405", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.067753+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "06996458-b532-415d-a53d-57006aeb52b5", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.083375+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "ab2b29c7-c762-44ca-bbb7-525a723eaeba", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.100294+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "cb3a6590-2c73-4109-b54c-9dfceba43992", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.116398+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "1065c736-f912-4bae-bc3b-cb3511f5735a", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.137852+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "bc3314b0-85f6-4c89-a7d4-9a67e6a57a70", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.153956+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "ed5c8c1a-3423-4278-95ae-fe11bc427991", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.178993+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "495df7e0-038e-4506-988d-9afaedb11239", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.244659+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "f04a7940-3687-48c2-82ad-1dccfb986e91", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.279579+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c1dc3f4e-946f-4aa7-b61f-92a56f9f034b", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.311034+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "affcfb94-852e-4543-8724-0fbd240a2828", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.340842+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "323b5a43-a0d8-47c0-a15a-f831239b2696", "alerts_created": 2}
+{"timestamp": "2026-10-30T23:54:56.373662+00:00", "level": "INFO", "logger": "minti.alerts", "outcome": "event_processed", "event_id": "c80ad960-cf63-4f15-82b9-b1ef8bd0c190", "alerts_created": 2}

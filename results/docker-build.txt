@@ -1,0 +1,118 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.04kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:22-alpine
+#2 DONE 0.4s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim
+#3 DONE 0.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 170B done
+#4 DONE 0.0s
+
+#5 [stage-1  1/10] FROM docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159
+#5 resolve docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159 0.0s done
+#5 DONE 0.0s
+
+#6 [frontend-builder 1/8] FROM docker.io/library/node:22-alpine@sha256:fe4f6d74e20370acb04ad889077d14d0f64a9c8ea6a42bc60cddf1e844699914
+#6 resolve docker.io/library/node:22-alpine@sha256:fe4f6d74e20370acb04ad889077d14d0f64a9c8ea6a42bc60cddf1e844699914 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 263.93kB 0.0s done
+#7 DONE 0.0s
+
+#8 [stage-1  3/10] COPY requirements.lock ./
+#8 CACHED
+
+#9 [stage-1  2/10] WORKDIR /app
+#9 CACHED
+
+#10 [frontend-builder 2/8] WORKDIR /app
+#10 CACHED
+
+#11 [stage-1  4/10] RUN pip install --no-cache-dir -r requirements.lock
+#11 CACHED
+
+#12 [frontend-builder 3/8] COPY package.json package-lock.json ./
+#12 DONE 0.0s
+
+#13 [stage-1  5/10] COPY backend ./backend
+#13 DONE 0.0s
+
+#14 [frontend-builder 4/8] RUN npm ci
+#14 1.691 npm warn deprecated recharts@2.15.4: 1.x and 2.x branches are no longer active. Bump to Recharts v3 to receive latest features and bugfixes. See https://github.com/recharts/recharts/wiki/3.0-migration-guide
+#14 3.294 
+#14 3.294 added 286 packages, and audited 287 packages in 3s
+#14 3.294 
+#14 3.294 53 packages are looking for funding
+#14 3.294   run `npm fund` for details
+#14 3.295 
+#14 3.295 found 0 vulnerabilities
+#14 3.295 npm notice
+#14 3.295 npm notice New major version of npm available! 10.9.9 -> 12.2.1
+#14 3.295 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+#14 3.295 npm notice To update run: npm install -g npm@12.2.1
+#14 3.295 npm notice
+#14 DONE 3.5s
+
+#15 [frontend-builder 5/8] COPY tsconfig.json vite.config.ts postcss.config.js index.html ./
+#15 DONE 0.1s
+
+#16 [frontend-builder 6/8] COPY src ./src
+#16 DONE 0.0s
+
+#17 [frontend-builder 7/8] COPY public ./public
+#17 DONE 0.0s
+
+#18 [frontend-builder 8/8] RUN npm run build
+#18 0.113 
+#18 0.113 > minti@2.0.0 build
+#18 0.113 > tsc --noEmit && vite build
+#18 0.113 
+#18 2.384 vite v6.4.5 building for production...
+#18 2.563 transforming...
+#18 4.493 ✓ 1108 modules transformed.
+#18 4.805 rendering chunks...
+#18 4.814 computing gzip size...
+#18 4.832 dist/index.html                   0.50 kB │ gzip:   0.32 kB
+#18 4.832 dist/assets/index-CgMUQpJB.css   45.32 kB │ gzip:   8.51 kB
+#18 4.832 dist/assets/index-DQV6tvNP.js   980.80 kB │ gzip: 284.01 kB
+#18 4.832 
+#18 4.832 (!) Some chunks are larger than 500 kB after minification. Consider:
+#18 4.832 - Using dynamic import() to code-split the application
+#18 4.832 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+#18 4.832 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+#18 4.833 ✓ built in 2.43s
+#18 DONE 4.9s
+
+#19 [stage-1  6/10] COPY --from=frontend-builder /app/dist/assets ./backend/static/assets
+#19 DONE 0.0s
+
+#20 [stage-1  7/10] COPY --from=frontend-builder /app/dist/index.html ./backend/templates/index.html
+#20 DONE 0.0s
+
+#21 [stage-1  8/10] COPY --from=frontend-builder /app/dist/favicon.ico ./backend/static/favicon.ico
+#21 DONE 0.0s
+
+#22 [stage-1  9/10] WORKDIR /app/backend
+#22 DONE 0.0s
+
+#23 [stage-1 10/10] RUN DEBUG=True python manage.py collectstatic --noinput && useradd --uid 10001 --no-create-home app
+#23 0.495 
+#23 0.495 157 static files copied to '/app/backend/staticfiles'.
+#23 DONE 0.5s
+
+#24 exporting to image
+#24 exporting layers 0.1s done
+#24 exporting manifest sha256:10133c330ff9432b64b12fe939c40359fdefb05306e0785515d93acf4397c416 done
+#24 exporting config sha256:d18927501efa8d07867dc79c29a2e87e747fdeaaf6d84466bf8ee53ec0e1a3c4 done
+#24 exporting attestation manifest sha256:3624cb89a8a5667b06643b6ee5553990edea4d1341260f1743dbc131c2fae1ba done
+#24 exporting manifest list sha256:a95dc124c2789b5319bf8c45b8fcee8a84438c698bc14aee4326482512e12404 done
+#24 naming to docker.io/library/minti-v2:local done
+#24 unpacking to docker.io/library/minti-v2:local 0.1s done
+#24 DONE 0.2s

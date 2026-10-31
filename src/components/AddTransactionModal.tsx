@@ -67,6 +67,7 @@ export function AddTransactionModal({
               Amount
             </label>
             <input
+              aria-label="Amount"
               type="number"
               step="0.01"
               required
@@ -87,6 +88,7 @@ export function AddTransactionModal({
               value={formData.description}
               onChange={(e) => setFormData({ ...formData, description: e.target.value })}
               className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-blue-500"
+              aria-label="Description"
               placeholder="What was this for?"
             />
           </div>
@@ -100,6 +102,7 @@ export function AddTransactionModal({
               value={formData.category}
               onChange={(e) => setFormData({ ...formData, category: e.target.value })}
               className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-blue-500"
+              aria-label="Category"
               placeholder="Food, Transport, etc."
             />
           </div>
@@ -123,6 +126,7 @@ export function AddTransactionModal({
               Date
             </label>
             <input
+              aria-label="Date"
               type="date"
               required
               value={formData.date}
