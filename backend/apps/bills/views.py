@@ -13,14 +13,3 @@ class BillReminderViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         return BillReminder.objects.filter(user=self.request.user).order_by("due_date")
-
-    def partial_update(self, request, *args, **kwargs):
-        instance = self.get_object()
-        is_paid = request.data.get("isPaid")
-        if is_paid is None:
-            return Response(
-                {"error": "isPaid is required"}, status=status.HTTP_400_BAD_REQUEST
-            )
-        instance.is_paid = bool(is_paid)
-        instance.save()
-        return Response(self.get_serializer(instance).data)

@@ -4,6 +4,7 @@ from .models import CalendarEvent
 
 
 class CalendarEventSerializer(serializers.ModelSerializer):
+    id = serializers.CharField(max_length=255)
     spendingProbability = serializers.FloatField(
         source="spending_probability", required=False, allow_null=True
     )

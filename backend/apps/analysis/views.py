@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta, timezone
 
+from rest_framework import serializers
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -19,7 +20,7 @@ class SpendingAnalysisView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        days = int(request.query_params.get("days", 30))
+        days = serializers.IntegerField(min_value=1, max_value=3660).run_validation(request.query_params.get("days", 30))
         user = request.user
 
         end_date = datetime.now(tz=timezone.utc)

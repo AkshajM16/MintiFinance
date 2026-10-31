@@ -12,7 +12,9 @@ SECRET_KEY = os.environ.get(
     "django-insecure-dev-key-replace-in-production",
 )
 
-DEBUG = os.environ.get("DEBUG", "True") == "True"
+DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
+if not DEBUG and (not os.environ.get("DJANGO_SECRET_KEY") or SECRET_KEY.startswith("django-insecure")):
+    raise ValueError("Set a strong DJANGO_SECRET_KEY or explicitly enable local DEBUG")
 
 ALLOWED_HOSTS = os.environ.get(
     "ALLOWED_HOSTS", "localhost 127.0.0.1"
@@ -36,9 +38,11 @@ INSTALLED_APPS = [
     "apps.events",
     "apps.analysis",
     "apps.chat",
+    "apps.alerts",
 ]
 
 MIDDLEWARE = [
+    "minti.observability.RequestLogMiddleware",
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
@@ -75,7 +79,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": os.environ.get("POSTGRES_DB", "minti_db"),
         "USER": os.environ.get("POSTGRES_USER", "minty"),
-        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "minty_password"),
+        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", ""),
         "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
         "PORT": os.environ.get("POSTGRES_PORT", "5432"),
     }
@@ -130,3 +134,23 @@ GOOGLE_CLIENT_ID = os.environ.get("VITE_GOOGLE_CLIENT_ID", "") or os.environ.get
 
 # OpenAI
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+
+AWS_REGION = os.environ.get("AWS_REGION", "us-east-1")
+SQS_QUEUE_URL = os.environ.get("SQS_QUEUE_URL", "")
+SQS_ENDPOINT_URL = os.environ.get("SQS_ENDPOINT_URL", "")
+SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_SAMESITE = "Lax"
+SESSION_COOKIE_SECURE = os.environ.get("PUBLIC_HTTPS", "false") == "true"
+CSRF_COOKIE_SECURE = SESSION_COOKIE_SECURE
+SECURE_SSL_REDIRECT = SESSION_COOKIE_SECURE
+SECURE_HSTS_SECONDS = 31536000 if SESSION_COOKIE_SECURE else 0
+SECURE_HSTS_INCLUDE_SUBDOMAINS = SESSION_COOKIE_SECURE
+SECURE_HSTS_PRELOAD = SESSION_COOKIE_SECURE
+SECURE_CONTENT_TYPE_NOSNIFF = True
+DATA_UPLOAD_MAX_MEMORY_SIZE = 262144
+LOGGING = {
+    "version": 1, "disable_existing_loggers": False,
+    "formatters": {"json": {"()": "minti.observability.JsonFormatter"}},
+    "handlers": {"console": {"class": "logging.StreamHandler", "formatter": "json"}},
+    "loggers": {"minti": {"handlers": ["console"], "level": "INFO", "propagate": False}},
+}

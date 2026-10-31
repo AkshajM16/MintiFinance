@@ -1,4 +1,7 @@
-from rest_framework import viewsets
+from django.db import transaction
+from apps.alerts.queue import publish
+from apps.alerts.service import event_for
+from rest_framework import viewsets, serializers
 from rest_framework.permissions import IsAuthenticated
 
 from .models import RecurringTransaction, Transaction
@@ -20,6 +23,10 @@ class TransactionViewSet(viewsets.ModelViewSet):
         event_id = params.get("eventId")
         search = params.get("search")
 
+        if start_date: start_date = serializers.DateTimeField().run_validation(start_date)
+        if end_date: end_date = serializers.DateTimeField().run_validation(end_date)
+        if start_date and end_date and end_date < start_date:
+            raise serializers.ValidationError("endDate must follow startDate")
         if start_date and end_date:
             qs = qs.filter(date__gte=start_date, date__lte=end_date)
         if tx_type:
@@ -35,7 +42,12 @@ class TransactionViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         tx_type = self.request.data.get("type", "")
-        serializer.save(user=self.request.user, type=tx_type.upper())
+        with transaction.atomic():
+            tx = serializer.save(user=self.request.user, type=tx_type.upper())
+            if tx.type == "EXPENSE":
+                event = event_for(tx)
+                event["request_id"] = getattr(self.request, "request_id", None)
+                transaction.on_commit(lambda: publish(event))
 
     def perform_update(self, serializer):
         data = {}

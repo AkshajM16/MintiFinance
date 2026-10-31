@@ -1,3 +1,4 @@
+import { AlertPanel } from "@/components/AlertPanel";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -349,6 +350,7 @@ function MainApp() {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
             >
+              <AlertPanel />
               {renderPageContent()}
             </motion.div>
           </AnimatePresence>
