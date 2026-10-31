@@ -1,0 +1,28 @@
+x-logging: &cloudwatch
+  driver: awslogs
+  options:
+    awslogs-region: ${AWS_REGION:?Set AWS_REGION}
+    awslogs-group: ${CLOUDWATCH_LOG_GROUP:?Set CLOUDWATCH_LOG_GROUP}
+    awslogs-create-group: "false"
+services:
+  app:
+    logging:
+      <<: *cloudwatch
+      options:
+        awslogs-region: ${AWS_REGION}
+        awslogs-group: ${CLOUDWATCH_LOG_GROUP}
+        awslogs-stream: app
+  worker:
+    logging:
+      <<: *cloudwatch
+      options:
+        awslogs-region: ${AWS_REGION}
+        awslogs-group: ${CLOUDWATCH_LOG_GROUP}
+        awslogs-stream: worker
+  db:
+    logging:
+      <<: *cloudwatch
+      options:
+        awslogs-region: ${AWS_REGION}
+        awslogs-group: ${CLOUDWATCH_LOG_GROUP}
+        awslogs-stream: postgres

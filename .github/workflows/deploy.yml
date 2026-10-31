@@ -1,0 +1,36 @@
+name: Authorized AWS infrastructure deployment
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    environment: aws-demo
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      actions: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Require successful CI for this exact main commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          result=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs?head_sha=$GITHUB_SHA&status=success" --jq '.workflow_runs | length')
+          test "$result" -gt 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+      - run: npm --prefix infra ci
+      - name: Provision approved demo infrastructure
+        working-directory: infra
+        run: npx cdk deploy --require-approval never --outputs-file ../deployment-outputs.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deployment-outputs
+          path: deployment-outputs.json

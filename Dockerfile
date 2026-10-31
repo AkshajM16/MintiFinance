@@ -1,43 +1,25 @@
-# ─── Stage 1: Build Vite SPA ─────────────────────────────────────────────────
-FROM node:20-alpine AS frontend-builder
-
+FROM node:22-alpine AS frontend-builder
 WORKDIR /app
-
-COPY package.json package-lock.json* ./
+COPY package.json package-lock.json ./
 RUN npm ci
-
-COPY . .
-# Build outputs to /app/dist
+COPY tsconfig.json vite.config.ts postcss.config.js index.html ./
+COPY src ./src
+COPY public ./public
+ARG VITE_GOOGLE_CLIENT_ID=""
+ENV VITE_GOOGLE_CLIENT_ID=$VITE_GOOGLE_CLIENT_ID
 RUN npm run build
 
-# ─── Stage 2: Django + Gunicorn ──────────────────────────────────────────────
 FROM python:3.12-slim
-
-ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1
-
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
 WORKDIR /app
-
-# System deps for psycopg2 and general build tooling
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends gcc libpq-dev \
-    && rm -rf /var/lib/apt/lists/*
-
-# Python dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Django source
-COPY backend/ ./backend/
-
-# Copy compiled Vite SPA into Django's static root so whitenoise can serve it
-COPY --from=frontend-builder /app/dist ./backend/staticfiles/
-
+COPY requirements.lock ./
+RUN pip install --no-cache-dir -r requirements.lock
+COPY backend ./backend
+COPY --from=frontend-builder /app/dist/assets ./backend/static/assets
+COPY --from=frontend-builder /app/dist/index.html ./backend/templates/index.html
+COPY --from=frontend-builder /app/dist/favicon.ico ./backend/static/favicon.ico
 WORKDIR /app/backend
-
-# Collect static files (including the Vite build)
-RUN python manage.py collectstatic --noinput || true
-
+RUN DEBUG=True python manage.py collectstatic --noinput && useradd --uid 10001 --no-create-home app
+USER 10001
 EXPOSE 8000
-
-CMD ["gunicorn", "minti.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "4", "--timeout", "120"]
+CMD ["gunicorn", "minti.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "2", "--timeout", "60", "--access-logfile", "/dev/null"]
