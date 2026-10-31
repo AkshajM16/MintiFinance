@@ -59,7 +59,7 @@ Run `failure-58de7c794100413581474ae7d69eb263`, local PostgreSQL + Moto SQS. Vis
 
 ## D: automated quality checks
 
-See `results/quality_summary.json` for final counts/status. Commands:
+54 backend tests, 1 Playwright workflow and 9 infrastructure assertions passed locally. GitHub CI run [41148044609](https://github.com/AkshajM16/MintiFinance/actions/runs/41148044609) completed successfully for commit `981b9f84a56fb6402a9ece2bea3a1b8d84e19bf1`, including PostgreSQL tests, browser workflow and Docker build. This is an actual hosted result, not an inference from local checks. Later revisions receive their own checks on PR #1. See `results/quality_summary.json` and `results/github-ci.json` for machine-readable status. Commands:
 
 ```bash
 .venv/bin/pytest -q --junitxml=results/pytest.xml

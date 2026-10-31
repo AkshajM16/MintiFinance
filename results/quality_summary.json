@@ -15,7 +15,13 @@
   "cloudformation_schema_lint": "passed",
   "docker_build": "passed",
   "docker_loopback_smoke": "passed",
-  "github_ci": "pending push/run",
+  "github_ci": {
+    "result": "success",
+    "run_id": 41148044609,
+    "tested_commit": "981b9f84a56fb6402a9ece2bea3a1b8d84e19bf1",
+    "url": "https://github.com/AkshajM16/MintiFinance/actions/runs/41148044609",
+    "note": "Exact recorded hosted run; later documentation/bootstrap revisions also receive CI checks on the PR."
+  },
   "aws_provisioning": "blocked: no credentials/region or billable-resource authorization",
   "aws_endpoint_smoke": "not run",
   "cloudwatch_delivery_and_alarm": "not run",

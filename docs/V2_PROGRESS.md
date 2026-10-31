@@ -44,3 +44,10 @@
 - Draft PR opened: https://github.com/AkshajM16/MintiFinance/pull/1. GitHub connector returned 403 for PR creation; authenticated gh CLI succeeded. No human review requested or claimed.
 - Found Compose release checksums use a binary-marker `*` prefix; corrected bootstrap checksum selection and verified against the real pinned release checksum record. Infrastructure build/assertions/synth/schema lint rerun passed.
 - Production Compose app/database stopped after successful smoke testing; volumes and local synthetic PostgreSQL data retained. No cloud resources to clean up.
+
+## Hosted CI and handoff
+
+- GitHub Actions run 41148044609 passed for commit 981b9f84a56fb6402a9ece2bea3a1b8d84e19bf1. Raw run/job/step metadata saved in results/github-ci.json; quality_summary.json records the exact verified commit and URL. The bootstrap checksum fix and later documentation revisions get their own PR checks.
+- PR #1 remains a draft, intentionally unmerged. Release candidate tag will identify the verified local/CI implementation; it must not imply AWS deployment.
+- Resume here: repository is `/Users/akshaj/Desktop/Internship/Projects/Minti V2`, branch feature/minti-cloud-v2. Local work/pgdata already exists; use `pg_ctl -D work/pgdata -l work/postgres.log -o '-h 127.0.0.1 -p 55432 -k /tmp' start` rather than reinitializing. Native PostgreSQL and Compose verification services are stopped; volumes retained. Ignored .env contains locally generated test-container secrets; do not print or commit it.
+- Remaining owner actions: AWS CLI/SSO/account region setup, explicit billable-resource approval, Google application registration, optional LLM cost limit, and optional reviewed OIDC deployment-role setup. Exact commands/UI steps and budget are in V2_OPERATIONS.md. No AWS-hosted capabilities are claimed verified.

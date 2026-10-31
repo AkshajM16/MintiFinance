@@ -6,7 +6,7 @@ Added asynchronous 80%/100% budget alerts to the existing React/Django financial
 
 ## Technologies genuinely used
 
-Executed locally: React 19, TypeScript, Vite, Django 5, Django REST Framework, PostgreSQL 17, Python 3.12, pytest, Playwright/Chromium, Docker Compose, boto3 and Moto's SQS emulator, AWS CDK TypeScript synthesis/assertions, CloudFormation schema lint. CI workflow status and final test counts are recorded in results/quality_summary.json.
+Executed locally: React 19, TypeScript, Vite, Django 5, Django REST Framework, PostgreSQL 17, Python 3.12, pytest, Playwright/Chromium, Docker Compose, boto3 and Moto's SQS emulator, AWS CDK TypeScript synthesis/assertions, CloudFormation schema lint. GitHub Actions CI also completed successfully (run 41148044609). Workflow status and final test counts are recorded in results/quality_summary.json.
 
 AWS-hosted services: **none deployed**. EC2/SQS/DLQ/IAM/CloudWatch definitions exist and synthesize; no claim of AWS-hosted operation, AWS latency, alarm delivery, uptime or scale. GPT-4o-mini is preserved in code and deterministically mocked in tests; no paid model calls were executed.
 
